@@ -1,12 +1,12 @@
-package net.minecraft.src;
+п»їpackage net.minecraft.src;
 import java.util.Random;
 
 public class mod_konung extends BaseMod
 {
-	//Блоки
+	//Р‘Р»РѕРєРё
 	public static final Block WoodH = new BlockWoodH(181,0).setHardness(2.0F).setBlockName("WoodH!");
 	
-	//Итемы
+	//РС‚РµРјС‹
 	public static final Item KonungKnife = new ItemKonungKnife(500).setItemName("Knife!");
 	public static final Item KonunGladius = new ItemKonungGladius(501).setItemName("Gladius!");
 	public static final Item KonungSpata = new ItemKonungSpata(502).setItemName("Spata!");
@@ -18,17 +18,17 @@ public class mod_konung extends BaseMod
 	
 	public mod_konung()
 	{
-		//Регистрация
+		//Р РµРіРёСЃС‚СЂР°С†РёСЏ
 		ModLoader.registerBlock(WoodH);
 		
-		//Имя
+		//РРјСЏ
 		ModLoader.addName(WoodH, "Horizontal Wood");
 		ModLoader.addName(KonungKnife, "Knife");
 		ModLoader.addName(KonunGladius, "Gladius");
 		ModLoader.addName(KonungSpata, "Spata");
 		ModLoader.addName(KonungLongSword, "Long Sword");
 		
-		//Текстура
+		//РўРµРєСЃС‚СѓСЂР°
 		woodHBark_V = ModLoader.addOverride("/terrain.png", "/woodHBark_V.png");
 		woodHBark_H = ModLoader.addOverride("/terrain.png", "/woodHBark_H.png");
 		woodHCut = ModLoader.addOverride("/terrain.png", "/woodHCut.png");
@@ -37,7 +37,7 @@ public class mod_konung extends BaseMod
 		KonungSpata.iconIndex = ModLoader.addOverride("/gui/items.png", "/spata.png");
 		KonungLongSword.iconIndex = ModLoader.addOverride("/gui/items.png", "/longsword.png");
 		
-		//Рецепт
+		//Р РµС†РµРїС‚
 		ModLoader.addRecipe(new ItemStack(WoodH, 1), new Object[]
 				{
 					"#", "#", "#", Character.valueOf('#'), Block.wood
