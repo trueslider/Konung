@@ -1,6 +1,6 @@
-package net.minecraft.src;
+п»їpackage net.minecraft.src;
 import java.util.Random;
-//Комментарий
+//РљРѕРјРјРµРЅС‚Р°СЂРёР№
 public class mod_konung extends BaseMod
 {
 	//Blocks
