@@ -77,4 +77,39 @@ public class BlockKonungWoodBenchPine extends BlockContainer
           	setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
           	super.getCollidingBoundingBoxes(par1World, par2, par3, par4, par5AxisAlignedBB, par6ArrayList);
         }
+        
+        /* взято из Seatable Chairs 1.3 by ITOS*/
+        
+        public boolean blockActivated(World world, int i, int j, int k, EntityPlayer entityplayer)
+        {
+        	if(entityplayer.getCurrentEquippedItem() != null && entityplayer.getCurrentEquippedItem().getItem() instanceof ItemSign)
+        	{
+        		return false;
+        	} 
+        	else 
+        	{
+        		return BlockKonungMountable.blockActivated(world, i, j, k, entityplayer, 0.25F, 0.5F, 0.5F, 0, 1, 2, 3);
+        	}
+        }
+
+        public void onBlockPlacedBy1(World world, int i, int j, int k, EntityLiving entityliving)
+        {
+            int l = MathHelper.floor_double((double)((entityliving.rotationYaw * 4F) / 360F) + 0.5D) & 3;
+            if (l == 0)
+            {
+                world.setBlockMetadataWithNotify(i, j, k, 2);
+            }
+            if (l == 1)
+            {
+                world.setBlockMetadataWithNotify(i, j, k, 1);
+            }
+            if (l == 2)
+            {
+                world.setBlockMetadataWithNotify(i, j, k, 3);
+            }
+            if (l == 3)
+            {
+                world.setBlockMetadataWithNotify(i, j, k, 0);
+            }
+        }
 }

@@ -12,6 +12,9 @@ public class mod_konungFurniture extends BaseMod
 	public static final Block woodBarrel = (new BlockKonungWoodBarrel(158, TileEntityKonungWoodBarrel.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodBarrel");
 	public static final Block leatherBanner = (new BlockKonungLeatherBanner(159, TileEntityKonungLeatherBanner.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("leatherBanner");
 	public static final Block window = (new BlockKonungWindow(160, TileEntityKonungWindow.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("window");
+	public static final Block hay = (new BlockKonungHay(161,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hay");
+	public static final Block hayStairs = (new BlockKonungStairs(162,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayStairs");
+	public static final Block hayCornerStairs = (new BlockKonungCornerStairs(163,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayCornerStairs");
 	
 	public static final Item itemWoodTable = (new ItemReed(6000, woodTable)).setItemName("itemWoodTable");
 	public static final Item itemWoodTablePine = (new ItemReed(6001, woodTablePine)).setItemName("itemWoodTablePine");
@@ -57,6 +60,13 @@ public class mod_konungFurniture extends BaseMod
 		ModLoader.registerTileEntity(TileEntityKonungLeatherBanner.class, "LeatherBannerTileEntity", renderleatherbanner);
 		ModLoader.registerTileEntity(TileEntityKonungWindow.class, "WindowTileEntity", renderwindow);
 		
+		ModLoader.registerBlock(hay);
+		ModLoader.registerBlock(hayStairs);
+		ModLoader.registerBlock(hayCornerStairs);
+		hay.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/hay.png");
+		hayStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/hay.png");
+		hayCornerStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/hay.png");
+		
 		ModLoader.addName(itemWoodTable, (new StringBuilder()).append("Wooden Table").toString());
 		ModLoader.addName(itemWoodTablePine, (new StringBuilder()).append("Wooden Table").toString());
 		ModLoader.addName(itemWoodTableBirch, (new StringBuilder()).append("Wooden Table").toString());
@@ -68,6 +78,9 @@ public class mod_konungFurniture extends BaseMod
 		ModLoader.addName(itemWoodBarrel, (new StringBuilder()).append("Wooden Barrel").toString());
 		ModLoader.addName(itemLeatherBanner, (new StringBuilder()).append("Crucified Leather").toString());
 		ModLoader.addName(itemWindow, (new StringBuilder()).append("Window").toString());
+		ModLoader.addName(hay, "Haystack");
+		ModLoader.addName(hayStairs, "Hay Stairs");
+		ModLoader.addName(hayCornerStairs, "Hay Stairs");
 		
 		itemWoodTable.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontable.png");
 		itemWoodTablePine.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontablepine.png");
@@ -92,5 +105,8 @@ public class mod_konungFurniture extends BaseMod
 		ModLoader.addRecipe(new ItemStack(itemWoodBarrel, 1), new Object[] { "#X#", "X#X", "#X#", Character.valueOf('X'), Block.planks});
 		ModLoader.addRecipe(new ItemStack(itemLeatherBanner, 1), new Object[] { "#X#", "#Y#", "X#X", Character.valueOf('X'), new ItemStack(Item.stick,1),Character.valueOf('Y'), new ItemStack(Item.leather,1)});
 		ModLoader.addRecipe(new ItemStack(itemWindow, 1), new Object[] { "#X#", "XYX", "#X#", Character.valueOf('X'), Block.planks ,Character.valueOf('Y'), Block.thinGlass});
+		ModLoader.addRecipe(new ItemStack(hay, 3), 	new Object[]{ "XXX","XXX","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
+		ModLoader.addRecipe(new ItemStack(hayStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
+		ModLoader.addRecipe(new ItemStack(hayCornerStairs, 3), 	new Object[]{ "X##","X##","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
 	}
 }
