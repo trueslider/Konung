@@ -1,46 +1,47 @@
 ﻿package net.minecraft.src;
+import net.minecraft.src.Konung.*;
 import java.util.Random;
 
 public class mod_konungWeapons extends BaseMod
 {
 
-	//Итемы
-	public static final Item KonungKnife = new ItemKonungKnife(500).setItemName("Knife!");
-	public static final Item KonunGladius = new ItemKonungGladius(501).setItemName("Gladius!");
-	public static final Item KonungSpata = new ItemKonungSpata(502).setItemName("Spata!");
-	public static final Item KonungLongSword = new ItemKonungLongSword(503).setItemName("LongSword!");
+	//Items
+	public static final Item KonungKnife = new ItemSword(3001, EnumToolMaterial.WOOD).setItemName("Knife!");
+	public static final Item KonunGladius = new ItemSword(3002, EnumToolMaterial.STONE).setItemName("Gladius!");
+	public static final Item KonungSpata = new ItemSword(3003, EnumToolMaterial.IRON).setItemName("Spata!");
+	public static final Item KonungLongSword = new ItemSword(3004, EnumToolMaterial.EMERALD).setItemName("LongSword!");
 	
 	public mod_konungWeapons()
 	{
 	
-		//Имя
+		//Names
 		ModLoader.addName(KonungKnife, "Knife");
 		ModLoader.addName(KonunGladius, "Gladius");
 		ModLoader.addName(KonungSpata, "Spata");
 		ModLoader.addName(KonungLongSword, "Long Sword");
 		
-		//Текстура
-		KonungKnife.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/iconknife.png");
-		KonunGladius.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icongladius.png");
-		KonungSpata.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/iconspata.png");
-		KonungLongSword.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/iconlongsword.png");
+		//Textures
+		KonungKnife.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconknife.png");
+		KonunGladius.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icongladius.png");
+		KonungSpata.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconspata.png");
+		KonungLongSword.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconlongsword.png");
 		
-		//Рецепт
+		//Recipes
 		ModLoader.addRecipe(new ItemStack(KonungKnife, 1), new Object[]
+				{
+					"# ", " X", Character.valueOf('#'), Item.ingotIron, Character.valueOf('X'), Item.stick
+				});
+		ModLoader.addRecipe(new ItemStack(KonunGladius, 1), new Object[]
 				{
 					"#  ", " # ", "  X", Character.valueOf('#'), Item.ingotIron, Character.valueOf('X'), Item.stick
 				});
-		ModLoader.addRecipe(new ItemStack(KonunGladius, 1), new Object[]
+		ModLoader.addRecipe(new ItemStack(KonungSpata, 1), new Object[]
 				{
 					"## ", "## ", "  X", Character.valueOf('#'), Item.ingotIron, Character.valueOf('X'), Item.stick
 				});
-		ModLoader.addRecipe(new ItemStack(KonungSpata, 1), new Object[]
-				{
-					"#  ", " # ", "  X", Character.valueOf('#'), Item.ingotGold, Character.valueOf('X'), Item.stick
-				});
 		ModLoader.addRecipe(new ItemStack(KonunGladius, 1), new Object[]
 				{
-					"## ", "## ", "  X", Character.valueOf('#'), Item.ingotGold, Character.valueOf('X'), Item.stick
+					"###", "###", "  X", Character.valueOf('#'), Item.ingotIron, Character.valueOf('X'), Item.stick
 				});
 		
 		
