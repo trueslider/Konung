@@ -29,11 +29,11 @@ public class mod_konungAlchemy extends BaseMod
 		
 		//Bottles
 		
-		ModLoader.addName(KonungHealingPotion02, "Healing Bottle");
-		ModLoader.addName(KonungHealingPotion04, "Healing Bottle");
-		ModLoader.addName(KonungHealingPotion06, "Healing Bottle");
-		ModLoader.addName(KonungHealingPotion08, "Healing Bottle");
-		ModLoader.addName(KonungHealingPotion10, "Healing Bottle");
+		ModLoader.addName(KonungHealingPotion02, "Balsam - Concentration 1");
+		ModLoader.addName(KonungHealingPotion04, "Balsam - Concentration 2");
+		ModLoader.addName(KonungHealingPotion06, "Balsam - Concentration 3");
+		ModLoader.addName(KonungHealingPotion08, "Balsam - Concentration 4");
+		ModLoader.addName(KonungHealingPotion10, "Balsam - Concentration 5");
 		
 		KonungHealingPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potionheal02.png");
 		KonungHealingPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potionheal04.png");
