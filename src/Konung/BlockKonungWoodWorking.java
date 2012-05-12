@@ -3,9 +3,9 @@
 // Decompiler options: packimports(3) braces deadcode 
 
 package net.minecraft.src.Konung;
-
-import java.util.Random;
 import net.minecraft.src.*;
+import java.util.Random;
+
 
 // Referenced classes of package net.minecraft.src:
 //            BlockContainer, Material, Block, World, 
