@@ -6,10 +6,10 @@ public class mod_konungWeapons extends BaseMod
 {
 
 	//Items
-	public static final Item KonungKnife = new ItemSword(3001, EnumToolMaterial.WOOD).setItemName("Knife!");
-	public static final Item KonunGladius = new ItemSword(3002, EnumToolMaterial.STONE).setItemName("Gladius!");
-	public static final Item KonungSpata = new ItemSword(3003, EnumToolMaterial.IRON).setItemName("Spata!");
-	public static final Item KonungLongSword = new ItemSword(3004, EnumToolMaterial.EMERALD).setItemName("LongSword!");
+	public static final Item KonungKnife = new ItemSword(4101, EnumToolMaterial.WOOD).setItemName("Knife!");
+	public static final Item KonunGladius = new ItemSword(4102, EnumToolMaterial.STONE).setItemName("Gladius!");
+	public static final Item KonungSpata = new ItemSword(4103, EnumToolMaterial.IRON).setItemName("Spata!");
+	public static final Item KonungLongSword = new ItemSword(4104, EnumToolMaterial.EMERALD).setItemName("LongSword!");
 	
 	public mod_konungWeapons()
 	{
