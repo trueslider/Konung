@@ -59,8 +59,8 @@ public class BlockKonungMountable extends Block
 	    		}
 	    	}
 			//Sets coordinates for mounting a north oriented block.
-			float mountingX = i + x;
-			float mountingY = j + y;
+			float mountingX = i + x + 0.25F;
+			float mountingY = j + y - 0.1F;
 			float mountingZ = k + z;
 			//Changes coordinates for mounting to compensate for none-north block orientation.
 			if(north != south) 
@@ -68,18 +68,18 @@ public class BlockKonungMountable extends Block
 				int md = world.getBlockMetadata(i, j, k);
 				if (md == east) 
 				{
-					mountingX = i + 1 - z; 
-					mountingZ = k + x; 
+					mountingX = i - z + 1; 
+					mountingZ = k + x + 0.25F; 
 				}
 				else if (md == south) 
 				{
-					mountingX = i + 1 - x; 
-					mountingZ = k + 1 - z; 
+					mountingX = i - x + 0.75F; 
+					mountingZ = k - z + 1; 
 				}
 				else if (md == west) 
 				{
 					mountingX = i + z; 
-					mountingZ = k + 1 - x; 
+					mountingZ = k - x + 0.75F; 
 				}
 			}
 	    	//Creates a new EMB if none had been created already or if the old one was bugged.
