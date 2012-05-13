@@ -5,26 +5,26 @@ import java.util.Random;
 public class mod_konungAlchemy extends BaseMod
 {
 
-	public static final Block KonungNut = new BlockKonungAlchemyNut(161, ModLoader.addOverride("/terrain.png", "/textures/konung/itemnut.png")).setStepSound(Block.soundGrassFootstep).setBlockName("Nut!");
-	public static final Block KonungWhiteRoot = new BlockKonungAlchemyWhiteRoot(162, ModLoader.addOverride("/terrain.png", "/textures/konung/itemroot.png")).setStepSound(Block.soundGrassFootstep).setBlockName("WhiteRoot!");
+	public static final Block KonungNut = new BlockKonungAlchemyNut(130, ModLoader.addOverride("/terrain.png", "/textures/konung/itemnut.png")).setStepSound(Block.soundGrassFootstep).setBlockName("Nut!");
+	public static final Block KonungWhiteRoot = new BlockKonungAlchemyWhiteRoot(131, ModLoader.addOverride("/terrain.png", "/textures/konung/itemroot.png")).setStepSound(Block.soundGrassFootstep).setBlockName("WhiteRoot!");
 	
-	public static final Item KonungHealingPotion02 = new ItemFood(161, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.2F).setAlwaysEdible().setItemName("Heal1!");
-	public static final Item KonungHealingPotion04 = new ItemFood(162, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.4F).setAlwaysEdible().setItemName("Heal2!");
-	public static final Item KonungHealingPotion06 = new ItemFood(163, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.6F).setAlwaysEdible().setItemName("Heal3!");
-	public static final Item KonungHealingPotion08 = new ItemFood(164, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.8F).setAlwaysEdible().setItemName("Heal4!");
-	public static final Item KonungHealingPotion10 = new ItemFood(165, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 1.0F).setAlwaysEdible().setItemName("Heal5!");
+	public static final Item KonungHealingPotion02 = new ItemFood(4000, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.2F).setAlwaysEdible().setItemName("Heal1!");
+	public static final Item KonungHealingPotion04 = new ItemFood(4001, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.4F).setAlwaysEdible().setItemName("Heal2!");
+	public static final Item KonungHealingPotion06 = new ItemFood(4002, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.6F).setAlwaysEdible().setItemName("Heal3!");
+	public static final Item KonungHealingPotion08 = new ItemFood(4003, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.8F).setAlwaysEdible().setItemName("Heal4!");
+	public static final Item KonungHealingPotion10 = new ItemFood(4004, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 1.0F).setAlwaysEdible().setItemName("Heal5!");
 	
-	public static final Item KonungOilPotion02 = new ItemFood(166, -4, 1F, false).setAlwaysEdible().setItemName("Oil1!");
-	public static final Item KonungOilPotion04 = new ItemFood(167, -4, 1F, false).setAlwaysEdible().setItemName("Oil2!");
-	public static final Item KonungOilPotion06 = new ItemFood(168, -4, 1F, false).setAlwaysEdible().setItemName("Oil3!");
-	public static final Item KonungOilPotion08 = new ItemFood(169, -4, 1F, false).setAlwaysEdible().setItemName("Oil4!");
-	public static final Item KonungOilPotion10 = new ItemFood(170, -4, 1F, false).setAlwaysEdible().setItemName("Oil5!");
+	public static final Item KonungOilPotion02 = new ItemFood(4005, -4, 1F, false).setAlwaysEdible().setItemName("Oil1!");
+	public static final Item KonungOilPotion04 = new ItemFood(4006, -4, 1F, false).setAlwaysEdible().setItemName("Oil2!");
+	public static final Item KonungOilPotion06 = new ItemFood(4007, -4, 1F, false).setAlwaysEdible().setItemName("Oil3!");
+	public static final Item KonungOilPotion08 = new ItemFood(4008, -4, 1F, false).setAlwaysEdible().setItemName("Oil4!");
+	public static final Item KonungOilPotion10 = new ItemFood(4009, -4, 1F, false).setAlwaysEdible().setItemName("Oil5!");
 	
-	public static final Item KonungBragaPotion02 = new ItemFood(171, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.2F).setAlwaysEdible().setItemName("Braga1!");
-	public static final Item KonungBragaPotion04 = new ItemFood(172, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.4F).setAlwaysEdible().setItemName("Braga2!");
-	public static final Item KonungBragaPotion06 = new ItemFood(173, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.6F).setAlwaysEdible().setItemName("Braga3!");
-	public static final Item KonungBragaPotion08 = new ItemFood(174, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.8F).setAlwaysEdible().setItemName("Braga4!");
-	public static final Item KonungBragaPotion10 = new ItemFood(175, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 1.0F).setAlwaysEdible().setItemName("Braga5!");
+	public static final Item KonungBragaPotion02 = new ItemFood(4010, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.2F).setAlwaysEdible().setItemName("Braga1!");
+	public static final Item KonungBragaPotion04 = new ItemFood(4011, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.4F).setAlwaysEdible().setItemName("Braga2!");
+	public static final Item KonungBragaPotion06 = new ItemFood(4012, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.6F).setAlwaysEdible().setItemName("Braga3!");
+	public static final Item KonungBragaPotion08 = new ItemFood(4013, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.8F).setAlwaysEdible().setItemName("Braga4!");
+	public static final Item KonungBragaPotion10 = new ItemFood(4014, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 1.0F).setAlwaysEdible().setItemName("Braga5!");
 	
 	public mod_konungAlchemy()
 	{
@@ -226,8 +226,8 @@ public class mod_konungAlchemy extends BaseMod
              int Xcoord = chunkX + random.nextInt(16) + 8;
              int Ycoord = random.nextInt(8+100);
              int Zcoord = chunkZ + random.nextInt(16) + 8;
-			(new WorldGenKonungSapling(KonungNut.blockID)).generate(world, random, Xcoord, Ycoord, Zcoord);
-			(new WorldGenKonungSapling(KonungWhiteRoot.blockID)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			(new WorldGenKonungAlchemy(KonungNut.blockID)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			(new WorldGenKonungAlchemy(KonungWhiteRoot.blockID)).generate(world, random, Xcoord, Ycoord, Zcoord);
 		}
 	}
 	
