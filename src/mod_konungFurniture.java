@@ -15,7 +15,7 @@ public class mod_konungFurniture extends BaseMod
 	public static final Block woodBarrel = (new BlockKonungWoodBarrel(158, TileEntityKonungWoodBarrel.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodBarrel");
 	public static final Block leatherBanner = (new BlockKonungLeatherBanner(159, TileEntityKonungLeatherBanner.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("leatherBanner");
 	public static final Block window = (new BlockKonungWindow(160, TileEntityKonungWindow.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("window");
-	//public static final Block hay = (new BlockKonungHay(161,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hay");
+	public static final Block hay = (new BlockKonungHay(161,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hay");
 	//public static final Block hayStairs = (new BlockKonungStairs(162,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayStairs");
 	//public static final Block hayCornerStairs = (new BlockKonungCornerStairs(163,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayCornerStairs");
 	public static final Block woodIdol = (new BlockKonungWoodIdol(164, TileEntityKonungWoodIdol.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodIdol");
@@ -114,21 +114,21 @@ public class mod_konungFurniture extends BaseMod
 		ModLoader.addRecipe(new ItemStack(itemWindow, 1), new Object[] { "#X#", "XYX", "#X#", Character.valueOf('X'), Block.planks ,Character.valueOf('Y'), Block.thinGlass});
 		
 		//Блок сена
-		/*ModLoader.registerBlock(hay);
-		ModLoader.registerBlock(hayStairs);
-		ModLoader.registerBlock(hayCornerStairs);
+		ModLoader.registerBlock(hay);
+		//ModLoader.registerBlock(hayStairs);
+		//ModLoader.registerBlock(hayCornerStairs);
 		hay.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/hay.png");
-		hayStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/hay.png");
-		hayCornerStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/hay.png");
+		//hayStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/hay.png");
+		//hayCornerStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/hay.png");
 		
 		ModLoader.addName(hay, "Haystack");
-		ModLoader.addName(hayStairs, "Hay Stairs");
-		ModLoader.addName(hayCornerStairs, "Hay Stairs");
+		//ModLoader.addName(hayStairs, "Hay Stairs");
+		//ModLoader.addName(hayCornerStairs, "Hay Stairs");
 		
 		ModLoader.addRecipe(new ItemStack(hay, 3), 	new Object[]{ "XXX","XXX","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
-		ModLoader.addRecipe(new ItemStack(hayStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
-		ModLoader.addRecipe(new ItemStack(hayCornerStairs, 3), 	new Object[]{ "X##","X##","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
-		*/
+		//ModLoader.addRecipe(new ItemStack(hayStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
+		//ModLoader.addRecipe(new ItemStack(hayCornerStairs, 3), 	new Object[]{ "X##","X##","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
+		
 		//Деревянный идол
 		RenderKonungWoodIdol renderwoodidol = new RenderKonungWoodIdol();
 		ModLoader.registerTileEntity(TileEntityKonungWoodIdol.class, "WoodIdolTileEntity", renderwoodidol);
