@@ -28,8 +28,7 @@ public class mod_konungAlchemy extends BaseMod
 	
 	public mod_konungAlchemy()
 	{
-		//Plants
-		
+		//Plants		
 		ModLoader.registerBlock(KonungNut);
 		ModLoader.registerBlock(KonungWhiteRoot);
 				
@@ -38,9 +37,8 @@ public class mod_konungAlchemy extends BaseMod
 				
 		KonungNut.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/nut.png");
 		KonungWhiteRoot.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/root.png");
-		
+					
 		//Bottles
-		
 		ModLoader.addName(KonungHealingPotion02, "Balsam - Concentration 1");
 		ModLoader.addName(KonungHealingPotion04, "Balsam - Concentration 2");
 		ModLoader.addName(KonungHealingPotion06, "Balsam - Concentration 3");
