@@ -26,6 +26,12 @@ public class mod_konungAlchemy extends BaseMod
 	public static final Item KonungBragaPotion08 = new ItemFood(4013, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 0.8F).setAlwaysEdible().setItemName("Braga4!");
 	public static final Item KonungBragaPotion10 = new ItemFood(4014, 0, 1F, false).setPotionEffect(Potion.damageBoost.id, 60, 0, 1.0F).setAlwaysEdible().setItemName("Braga5!");
 	
+	public static final Item KonungPoisonPotion02 = new ItemFood(4015, 0, 1F, false).setPotionEffect(Potion.harm.id, 1, 0, 0.2F).setAlwaysEdible().setItemName("Poison1!");
+	public static final Item KonungPoisonPotion04 = new ItemFood(4016, 0, 1F, false).setPotionEffect(Potion.harm.id, 1, 0, 0.4F).setAlwaysEdible().setItemName("Poison2!");
+	public static final Item KonungPoisonPotion06 = new ItemFood(4017, 0, 1F, false).setPotionEffect(Potion.harm.id, 1, 0, 0.6F).setAlwaysEdible().setItemName("Poison3!");
+	public static final Item KonungPoisonPotion08 = new ItemFood(4018, 0, 1F, false).setPotionEffect(Potion.harm.id, 1, 0, 0.8F).setAlwaysEdible().setItemName("Poison4!");
+	public static final Item KonungPoisonPotion10 = new ItemFood(4019, 0, 1F, false).setPotionEffect(Potion.harm.id, 1, 0, 1.0F).setAlwaysEdible().setItemName("Poison5!");
+	
 	public mod_konungAlchemy()
 	{
 		//Plants		
@@ -51,6 +57,12 @@ public class mod_konungAlchemy extends BaseMod
 		ModLoader.addName(KonungOilPotion08, "Oil - Concentration 4");
 		ModLoader.addName(KonungOilPotion10, "Oil - Concentration 5");
 		
+		ModLoader.addName(KonungPoisonPotion02, "Poison - Concentration 1");
+		ModLoader.addName(KonungPoisonPotion04, "Poison - Concentration 2");
+		ModLoader.addName(KonungPoisonPotion06, "Poison - Concentration 3");
+		ModLoader.addName(KonungPoisonPotion08, "Poison - Concentration 4");
+		ModLoader.addName(KonungPoisonPotion10, "Poison - Concentration 5");
+		
 		ModLoader.addName(KonungBragaPotion02, "Braga - Concentration 1");
 		ModLoader.addName(KonungBragaPotion04, "Braga - Concentration 2");
 		ModLoader.addName(KonungBragaPotion06, "Braga - Concentration 3");
@@ -58,23 +70,30 @@ public class mod_konungAlchemy extends BaseMod
 		ModLoader.addName(KonungBragaPotion10, "Braga - Concentration 5");
 		
 		
-		KonungHealingPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionheal02.png");
-		KonungHealingPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionheal04.png");
-		KonungHealingPotion06.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionheal06.png");
-		KonungHealingPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionheal08.png");
-		KonungHealingPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionheal10.png");
+		KonungHealingPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_heal_02.png");
+		KonungHealingPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_heal_04.png");
+		KonungHealingPotion06.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_heal_06.png");
+		KonungHealingPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_heal_08.png");
+		KonungHealingPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_heal_10.png");
 		
-		KonungOilPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionoil02.png");
-		KonungOilPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionoil04.png");
-		KonungOilPotion06.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionoil06.png");
-		KonungOilPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionoil08.png");
-		KonungOilPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionoil10.png");
+		KonungOilPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_oil_02.png");
+		KonungOilPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_oil_04.png");
+		KonungOilPotion06.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_oil_06.png");
+		KonungOilPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_oil_08.png");
+		KonungOilPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_oil_10.png");
 		
-		KonungBragaPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionbraga02.png");
-		KonungBragaPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionbraga04.png");
-		KonungBragaPotion06.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionbraga06.png");
-		KonungBragaPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionbraga08.png");
-		KonungBragaPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potionbraga10.png");
+		KonungPoisonPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_poison_02.png");
+		KonungPoisonPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_poison_04.png");
+		KonungPoisonPotion06.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_poison_06.png");
+		KonungPoisonPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_poison_08.png");
+		KonungPoisonPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_poison_10.png");
+		
+		KonungBragaPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_braga_02.png");
+		KonungBragaPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_braga_04.png");
+		KonungBragaPotion06.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_braga_06.png");
+		KonungBragaPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_braga_08.png");
+		KonungBragaPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_braga_10.png");
+		
 		
 		//Healing Recipe
 		ModLoader.addRecipe(new ItemStack(KonungHealingPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungWhiteRoot, Character.valueOf('#'), Item.potion});
@@ -127,6 +146,32 @@ public class mod_konungAlchemy extends BaseMod
 		ModLoader.addRecipe(new ItemStack(KonungOilPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungOilPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungOilPotion02});
 		ModLoader.addRecipe(new ItemStack(KonungOilPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungOilPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungNut});
 		ModLoader.addRecipe(new ItemStack(KonungOilPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungNut, Character.valueOf('#'), mod_konungAlchemy.KonungOilPotion08});
+		
+		//Poison Recipe
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungMobs.KonungPoisonSting, Character.valueOf('#'), Item.potion});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), Item.potion, Character.valueOf('#'), mod_konungMobs.KonungPoisonSting});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion04, 1), new Object[]{"X", "X", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion02, Character.valueOf('#'), mod_konungMobs.KonungPoisonSting});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungMobs.KonungPoisonSting, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion02});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion04, Character.valueOf('#'), mod_konungMobs.KonungPoisonSting});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungMobs.KonungPoisonSting, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion04});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion08, 1), new Object[]{"X", "X", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion06, Character.valueOf('#'), mod_konungMobs.KonungPoisonSting});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungMobs.KonungPoisonSting, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion06});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPoisonPotion08, Character.valueOf('#'), mod_konungMobs.KonungPoisonSting});
+		ModLoader.addRecipe(new ItemStack(KonungPoisonPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungMobs.KonungPoisonSting, Character.valueOf('#'), mod_konungAlchemy.KonungPoisonPotion08});
 		
 		//Braga Recipe 0.2
 		ModLoader.addRecipe(new ItemStack(KonungBragaPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungOilPotion02});

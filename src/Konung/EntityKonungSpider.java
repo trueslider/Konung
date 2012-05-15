@@ -27,9 +27,15 @@ public class EntityKonungSpider extends EntitySpider
     {
         return mod_konungMobs.KonungPoisonSting.shiftedIndex;
     }
-    
+
     protected void dropFewItems(boolean par1, int par2)
     {
+        super.dropFewItems(par1, par2);
+
+        if (par1 && (rand.nextInt(3) == 0 || rand.nextInt(1 + par2) > 0))
+        {
+            dropItem(mod_konungMobs.KonungPoisonSting.shiftedIndex, 1);
+        }
     }
     
     protected String getLivingSound()
