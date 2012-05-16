@@ -32,6 +32,12 @@ public class mod_konungAlchemy extends BaseMod
 	public static final Item KonungPoisonPotion08 = new ItemFood(4018, 0, 1F, false).setPotionEffect(Potion.harm.id, 1, 0, 0.8F).setAlwaysEdible().setItemName("Poison4!");
 	public static final Item KonungPoisonPotion10 = new ItemFood(4019, 0, 1F, false).setPotionEffect(Potion.harm.id, 1, 0, 1.0F).setAlwaysEdible().setItemName("Poison5!");
 	
+	public static final Item KonungPotionPotion02 = new ItemFood(4020, 0, 1F, false).setPotionEffect(Potion.jump.id, 120, 1, 0.2F).setPotionEffect(Potion.moveSpeed.id, 120, 1, 0.2F).setAlwaysEdible().setItemName("Potion1!");
+	public static final Item KonungPotionPotion04 = new ItemFood(4021, 0, 1F, false).setPotionEffect(Potion.jump.id, 120, 1, 0.4F).setPotionEffect(Potion.moveSpeed.id, 120, 1, 0.4F).setAlwaysEdible().setItemName("Potion2!");
+	public static final Item KonungPotionPotion06 = new ItemFood(4022, 0, 1F, false).setPotionEffect(Potion.jump.id, 120, 1, 0.6F).setPotionEffect(Potion.moveSpeed.id, 120, 1, 0.6F).setAlwaysEdible().setItemName("Potion3!");
+	public static final Item KonungPotionPotion08 = new ItemFood(4023, 0, 1F, false).setPotionEffect(Potion.jump.id, 120, 1, 0.8F).setPotionEffect(Potion.moveSpeed.id, 120, 1, 0.8F).setAlwaysEdible().setItemName("Potion4!");
+	public static final Item KonungPotionPotion10 = new ItemFood(4024, 0, 1F, false).setPotionEffect(Potion.jump.id, 120, 1, 1.0F).setPotionEffect(Potion.moveSpeed.id, 120, 1, 1.0F).setAlwaysEdible().setItemName("Potion5!");
+	
 	public mod_konungAlchemy()
 	{
 		//Plants		
@@ -69,6 +75,12 @@ public class mod_konungAlchemy extends BaseMod
 		ModLoader.addName(KonungBragaPotion08, "Braga - Concentration 4");
 		ModLoader.addName(KonungBragaPotion10, "Braga - Concentration 5");
 		
+		ModLoader.addName(KonungPotionPotion02, "Potion - Concentration 1");
+		ModLoader.addName(KonungPotionPotion04, "Potion - Concentration 2");
+		ModLoader.addName(KonungPotionPotion06, "Potion - Concentration 3");
+		ModLoader.addName(KonungPotionPotion08, "Potion - Concentration 4");
+		ModLoader.addName(KonungPotionPotion10, "Potion - Concentration 5");
+		
 		
 		KonungHealingPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_heal_02.png");
 		KonungHealingPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_heal_04.png");
@@ -94,10 +106,16 @@ public class mod_konungAlchemy extends BaseMod
 		KonungBragaPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_braga_08.png");
 		KonungBragaPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_braga_10.png");
 		
+		KonungPotionPotion02.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_potion_02.png");
+		KonungPotionPotion04.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_potion_04.png");
+		KonungPotionPotion06.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_potion_06.png");
+		KonungPotionPotion08.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_potion_08.png");
+		KonungPotionPotion10.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/potions/potion_potion_10.png");
+		
 		
 		//Healing Recipe
 		ModLoader.addRecipe(new ItemStack(KonungHealingPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungWhiteRoot, Character.valueOf('#'), Item.potion});
-		ModLoader.addRecipe(new ItemStack(KonungHealingPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), Item.potion, Character.valueOf('#'), KonungWhiteRoot});
+		ModLoader.addRecipe(new ItemStack(KonungHealingPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), Item.potion, Character.valueOf('#'), mod_konungAlchemy.KonungWhiteRoot});
 		
 		ModLoader.addRecipe(new ItemStack(KonungHealingPotion04, 1), new Object[]{"X", "X", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02});
 		ModLoader.addRecipe(new ItemStack(KonungHealingPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungWhiteRoot});
@@ -259,6 +277,92 @@ public class mod_konungAlchemy extends BaseMod
 		ModLoader.addRecipe(new ItemStack(KonungBragaPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion04});
 		ModLoader.addRecipe(new ItemStack(KonungBragaPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion02});
 		
+		
+		//Potion Recipe 0.2
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion10});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion10});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion02, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion02});
+
+		//Potion Recipe 0.4
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion10});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion10});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion04});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion04, 1), new Object[]{"X", "X", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion02});
+		
+		//Potion Recipe 0.6
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion10});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion10});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion06});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungPotionPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion06, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungPotionPotion04});
+		
+		//Potion Recipe 0.8
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion10});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion10});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion08});
+		
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungPotionPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungPotionPotion02});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion08, 1), new Object[]{"X", "X", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion04});
+		
+		//Potion Recipe 1.0
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungHealingPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungBragaPotion10});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungBragaPotion10, Character.valueOf('#'), mod_konungAlchemy.KonungHealingPotion10});
+
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion02, Character.valueOf('#'), mod_konungAlchemy.KonungPotionPotion08});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion04, Character.valueOf('#'), mod_konungAlchemy.KonungPotionPotion06});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion06, Character.valueOf('#'), mod_konungAlchemy.KonungPotionPotion04});
+		ModLoader.addRecipe(new ItemStack(KonungPotionPotion10, 1), new Object[]{"X", "#", Character.valueOf('X'), mod_konungAlchemy.KonungPotionPotion08, Character.valueOf('#'), mod_konungAlchemy.KonungPotionPotion02});
 		
 	}
 	
