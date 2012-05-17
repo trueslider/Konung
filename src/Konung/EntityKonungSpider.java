@@ -15,7 +15,7 @@ public class EntityKonungSpider extends EntitySpider
     
     public int getMaxHealth()
     {
-    	return 12;
+    	return 2;
     }
     
     public void onLivingUpdate()
@@ -74,8 +74,17 @@ public class EntityKonungSpider extends EntitySpider
     
     protected void attackEntity(Entity par1Entity, float par2)
     {
-    	((EntityLiving)par1Entity).addPotionEffect(new PotionEffect(Potion.poison.id, 5 * 20, 0));
-    	
+            if (onGround)
+            {
+            	((EntityLiving)par1Entity).addPotionEffect(new PotionEffect(Potion.poison.id, 100 * 10, 0));
+
+                double d = par1Entity.posX - posX;
+                double d1 = par1Entity.posZ - posZ;
+                float f1 = MathHelper.sqrt_double(d * d + d1 * d1);
+                motionX = (d / (double)f1) * 0.5D * 0.80000001192092896D + motionX * 0.20000000298023224D;
+                motionZ = (d1 / (double)f1) * 0.5D * 0.80000001192092896D + motionZ * 0.20000000298023224D;
+                motionY = 0.40000000596046448D;
+            }
     }
     
     
