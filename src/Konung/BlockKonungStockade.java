@@ -54,4 +54,8 @@ public class BlockKonungStockade extends Block
     {        
 		return i;
     }
+    public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)
+    {
+        par5Entity.attackEntityFrom(DamageSource.cactus, 1);
+    }
 }
