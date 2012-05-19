@@ -8,7 +8,7 @@ public class mod_konungStockade extends BaseMod
 	public static void prepareProps()
     { 
 		props.getInt("Slopes_Opacity", 0);
-		props.getInt("BlockKaevWoodCorners", 182);
+		props.getInt("BlockKaevWoodCorners", 165);
     }
 	
 	public mod_konungStockade()
