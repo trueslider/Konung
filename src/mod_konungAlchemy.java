@@ -1,5 +1,5 @@
 package net.minecraft.src;
-import net.minecraft.src.Konung.*;
+
 import java.util.Random;
 
 public class mod_konungAlchemy extends BaseMod

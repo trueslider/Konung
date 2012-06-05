@@ -1,5 +1,4 @@
 package net.minecraft.src;
-import net.minecraft.src.Konung.*;
 
 import java.util.Map;
 import java.util.Random;

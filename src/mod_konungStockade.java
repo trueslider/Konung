@@ -1,8 +1,9 @@
 package net.minecraft.src;
+
 import net.minecraft.client.Minecraft;
 import org.lwjgl.opengl.GL11;
 import java.io.File;
-import net.minecraft.src.Konung.*;
+
 public class mod_konungStockade extends BaseMod
 {		
 	public static void prepareProps()

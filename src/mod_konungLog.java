@@ -1,7 +1,5 @@
 package net.minecraft.src;
 
-import net.minecraft.src.Konung.*;
-
 import java.util.Random;
 
 public class mod_konungLog extends BaseMod
@@ -37,7 +35,7 @@ public class mod_konungLog extends BaseMod
       	ModLoader.registerBlock(logJungle);
       	
 		ModLoader.registerBlock(logVert);
-		ModLoader.registerBlock(logVert, net.minecraft.src.Konung.ItemKonungVertLog.class);
+		ModLoader.registerBlock(logVert, net.minecraft.src.ItemKonungVertLog.class);
 
     	LogTop 		= ModLoader.addOverride("/terrain.png", "/textures/konung/log_top.png");
     	LogX 		= ModLoader.addOverride("/terrain.png", "/textures/konung/log_x.png");

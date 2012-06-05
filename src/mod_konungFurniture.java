@@ -1,7 +1,5 @@
 package net.minecraft.src;
 
-import net.minecraft.src.Konung.*;
-
 public class mod_konungFurniture extends BaseMod
 	{
 	public static final Block woodTable = (new BlockKonungWoodTable(150, TileEntityKonungWoodTable.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTable");
