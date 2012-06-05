@@ -1,3 +1,4 @@
+//Комментарий
 package net.minecraft.src;
 
 import java.util.Random;

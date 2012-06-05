@@ -1,3 +1,4 @@
+//Комментарий
 package net.minecraft.src;
 
 public class ItemKonungVertLog extends ItemBlock

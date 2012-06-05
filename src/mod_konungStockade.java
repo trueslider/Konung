@@ -1,3 +1,4 @@
+//Комментарий
 package net.minecraft.src;
 
 import net.minecraft.client.Minecraft;

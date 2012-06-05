@@ -1,3 +1,4 @@
+//Комментарий
 package net.minecraft.src;
 
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;

@@ -1,3 +1,4 @@
+//Комментарий
 package net.minecraft.src;
 
 public class ModelKonungWindow extends ModelBase
