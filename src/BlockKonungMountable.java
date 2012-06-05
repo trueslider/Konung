@@ -1,6 +1,6 @@
 package net.minecraft.src;
 
-/* взято из Seatable Chairs 1.3 by ITOS */
+/* РІР·СЏС‚Рѕ РёР· Seatable Chairs 1.3 by ITOS */
 import java.util.List;
 
 public class BlockKonungMountable extends Block

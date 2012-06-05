@@ -4,6 +4,6 @@ public class TileEntityKonungWoodBenchJungle extends TileEntity
 {
         public TileEntityKonungWoodBenchJungle()
         {
-         //В этом файле ничего указывать не надо, но этот файл требуется
+         //Р’ СЌС‚РѕРј С„Р°Р№Р»Рµ РЅРёС‡РµРіРѕ СѓРєР°Р·С‹РІР°С‚СЊ РЅРµ РЅР°РґРѕ, РЅРѕ СЌС‚РѕС‚ С„Р°Р№Р» С‚СЂРµР±СѓРµС‚СЃСЏ
         }
 }

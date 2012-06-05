@@ -11,7 +11,7 @@ public class BlockKonungWoodBenchJungle extends BlockContainer
                 super(i, Material.wood);
                 BenchEntityClass = class1;
         }
-        //Указывает TileEntity для блока
+        //РЈРєР°Р·С‹РІР°РµС‚ TileEntity РґР»СЏ Р±Р»РѕРєР°
         public TileEntity getBlockEntity()
         {
                 try
@@ -23,27 +23,27 @@ public class BlockKonungWoodBenchJungle extends BlockContainer
                         throw new RuntimeException(exception);
                 }
         }
-        //Что дропается
+        //Р§С‚Рѕ РґСЂРѕРїР°РµС‚СЃСЏ
         public int idDropped(int i, Random random, int j)
         {
                 return mod_konungFurniture.itemWoodBenchJungle.shiftedIndex;
         }
-        //Количество дропа
+        //РљРѕР»РёС‡РµСЃС‚РІРѕ РґСЂРѕРїР°
         public int quantityDropped(Random random)
         {
                 return 1;
         }
-        //Тип рендера для блока
+        //РўРёРї СЂРµРЅРґРµСЂР° РґР»СЏ Р±Р»РѕРєР°
         public int getRenderType()
         {
                 return -1;
         }
-        //False значит что блок не прозрачный
+        //False Р·РЅР°С‡РёС‚ С‡С‚Рѕ Р±Р»РѕРє РЅРµ РїСЂРѕР·СЂР°С‡РЅС‹Р№
         public boolean isOpaqueCube()
         {
                 return false;
         }
-        //False значит что блок не обычный пример таблички, ступеньки и т.д
+        //False Р·РЅР°С‡РёС‚ С‡С‚Рѕ Р±Р»РѕРє РЅРµ РѕР±С‹С‡РЅС‹Р№ РїСЂРёРјРµСЂ С‚Р°Р±Р»РёС‡РєРё, СЃС‚СѓРїРµРЅСЊРєРё Рё С‚.Рґ
         public boolean renderAsNormalBlock()
         {
                 return false;
@@ -51,7 +51,7 @@ public class BlockKonungWoodBenchJungle extends BlockContainer
         
        public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLiving par5EntityLiving)
         {
-                int p = MathHelper.floor_double((double)((par5EntityLiving.rotationYaw * 4F) / 360F) + 0.5D) & 3; //поворот в сторону игрока
+                int p = MathHelper.floor_double((double)((par5EntityLiving.rotationYaw * 4F) / 360F) + 0.5D) & 3; //РїРѕРІРѕСЂРѕС‚ РІ СЃС‚РѕСЂРѕРЅСѓ РёРіСЂРѕРєР°
                 byte byte0 = 3;
                 
                 
@@ -79,7 +79,7 @@ public class BlockKonungWoodBenchJungle extends BlockContainer
            super.getCollidingBoundingBoxes(par1World, par2, par3, par4, par5AxisAlignedBB, par6ArrayList);
        }
        
-       /* взято из Seatable Chairs 1.3 by ITOS*/
+       /* РІР·СЏС‚Рѕ РёР· Seatable Chairs 1.3 by ITOS*/
        
        public boolean blockActivated(World world, int i, int j, int k, EntityPlayer entityplayer)
        {

@@ -987,7 +987,7 @@ public class mod_konungStockade extends BaseMod
         double d9 = d + block.maxX;
         double d91 = d + block.maxX/2;
         double d10 = d1 + block.minY;
-        double d11 = d1 + block.maxY;//высота блока
+        double d11 = d1 + block.maxY;//РІС‹СЃРѕС‚Р° Р±Р»РѕРєР°
         double d12 = d2 + block.minZ;
 		double d13 = d2 + block.maxZ/2;
 		
@@ -1050,7 +1050,7 @@ public class mod_konungStockade extends BaseMod
         double d9 = d + block.maxX;
         double d91 = d + block.maxX/2;
         double d10 = d1 + block.minY;
-        double d11 = d1 + block.maxY;//высота блока
+        double d11 = d1 + block.maxY;//РІС‹СЃРѕС‚Р° Р±Р»РѕРєР°
         double d12 = d2 + block.maxZ;
         double d121 = d2 + block.maxZ/2;
 		double d13 = d2 + block.minZ;
@@ -1115,7 +1115,7 @@ public class mod_konungStockade extends BaseMod
         }
         double d8 = d + block.minX;
         double d9 = d1 + block.minY;
-        double d10 = d1 + block.maxY;//высота блока
+        double d10 = d1 + block.maxY;//РІС‹СЃРѕС‚Р° Р±Р»РѕРєР°
         double d11 = d2 + block.minZ;
         double d12 = d2 + block.maxZ;
         double d121 = d2 + block.maxZ/2;	
@@ -1180,7 +1180,7 @@ public class mod_konungStockade extends BaseMod
         double d8 = d + block.maxX;
         double d81 = d + block.maxX/2;
         double d9 = d1 + block.minY;
-        double d10 = d1 + block.maxY;//высота блока
+        double d10 = d1 + block.maxY;//РІС‹СЃРѕС‚Р° Р±Р»РѕРєР°
         double d11 = d2 + block.minZ;
         double d12 = d2 + block.maxZ;
         double d121 = d2 + block.maxZ/2;

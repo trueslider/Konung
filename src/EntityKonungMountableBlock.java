@@ -1,9 +1,9 @@
 package net.minecraft.src;
 
-/* взято из Seatable Chairs 1.3 by ITOS*/
+/* РІР·СЏС‚Рѕ РёР· Seatable Chairs 1.3 by ITOS*/
 public class EntityKonungMountableBlock extends Entity
 {
-        //Эти переменные отслеживает блок, который создал объект
+        //Р­С‚Рё РїРµСЂРµРјРµРЅРЅС‹Рµ РѕС‚СЃР»РµР¶РёРІР°РµС‚ Р±Р»РѕРє, РєРѕС‚РѕСЂС‹Р№ СЃРѕР·РґР°Р» РѕР±СЉРµРєС‚
         protected int orgBlockPosX;
         protected int orgBlockPosY;
         protected int orgBlockPosZ;
@@ -22,7 +22,7 @@ public class EntityKonungMountableBlock extends Entity
                 height = 0.0F;
                 setPosition(d, d1, d2);
         }
-        //Этот конструктор вызывает MountableBlock
+        //Р­С‚РѕС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РІС‹Р·С‹РІР°РµС‚ MountableBlock
         public EntityKonungMountableBlock(World world, EntityPlayer entityplayer, int i, int j, int k, float mountingX, float mountingY, float mountingZ)
         {
                 super(world);
@@ -36,7 +36,7 @@ public class EntityKonungMountableBlock extends Entity
                 orgBlockID = world.getBlockId(i, j, k);
                 setPosition(mountingX, mountingY, mountingZ);
         }
-        //Этот метод обрабатывает монтаж и демонтаж.
+        //Р­С‚РѕС‚ РјРµС‚РѕРґ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚ РјРѕРЅС‚Р°Р¶ Рё РґРµРјРѕРЅС‚Р°Р¶.
         public boolean interact(EntityPlayer entityplayer)
         {
                 if (!super.interact(entityplayer))
@@ -75,7 +75,7 @@ public class EntityKonungMountableBlock extends Entity
                 ticksExisted++;
                 Profiler.endSection();
         }
-        //Следующие методы требуют Entity класса, но я не знаю, для чего они нужны:D
+        //РЎР»РµРґСѓСЋС‰РёРµ РјРµС‚РѕРґС‹ С‚СЂРµР±СѓСЋС‚ Entity РєР»Р°СЃСЃР°, РЅРѕ СЏ РЅРµ Р·РЅР°СЋ, РґР»СЏ С‡РµРіРѕ РѕРЅРё РЅСѓР¶РЅС‹:D
         public void entityInit() {}
         public void readEntityFromNBT(NBTTagCompound nbttagcompound) {}
         public void writeEntityToNBT(NBTTagCompound nbttagcompound) {}
