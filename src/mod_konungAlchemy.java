@@ -50,11 +50,11 @@ public class mod_konungAlchemy extends BaseMod
 	public static final Item KonungPureTearPotion08 = new ItemFood(4033, 0, 1F, false).setPotionEffect(Potion.digSpeed.id, 360, 10, 0.8F).setAlwaysEdible().setItemName("PureTear4!");
 	public static final Item KonungPureTearPotion10 = new ItemFood(4034, 0, 1F, false).setPotionEffect(Potion.digSpeed.id, 360, 10, 1.0F).setAlwaysEdible().setItemName("PureTear5!");
 	
-	public static final Item KonungElixirOfWisdomPotion02 = new ItemExpBottle(4035).setItemName("ElixirOfWisdom1!");
-	public static final Item KonungElixirOfWisdomPotion04 = new ItemExpBottle(4035).setItemName("ElixirOfWisdom2!");
-	public static final Item KonungElixirOfWisdomPotion06 = new ItemExpBottle(4035).setItemName("ElixirOfWisdom3!");
-	public static final Item KonungElixirOfWisdomPotion08 = new ItemExpBottle(4035).setItemName("ElixirOfWisdom4!");
-	public static final Item KonungElixirOfWisdomPotion10 = new ItemExpBottle(4035).setItemName("ElixirOfWisdom5!");
+	public static final Item KonungElixirOfWisdomPotion02 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom1!");
+	public static final Item KonungElixirOfWisdomPotion04 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom2!");
+	public static final Item KonungElixirOfWisdomPotion06 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom3!");
+	public static final Item KonungElixirOfWisdomPotion08 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom4!");
+	public static final Item KonungElixirOfWisdomPotion10 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom5!");
 	
 	public static final Item KonungLiveWaterPotion02 = new ItemFood(4040, 0, 1F, false).setPotionEffect(Potion.fireResistance.id, 60, 3, 0.2F).setAlwaysEdible().setItemName("LiveWater1!");
 	public static final Item KonungLiveWaterPotion04 = new ItemFood(4041, 0, 1F, false).setPotionEffect(Potion.fireResistance.id, 60, 3, 0.4F).setAlwaysEdible().setItemName("LiveWater2!");
