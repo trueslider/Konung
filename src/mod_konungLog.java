@@ -4,20 +4,17 @@ import java.util.Random;
 public class mod_konungLog extends BaseMod
 {
 		
-	public static Block woodDef 	= new BlockKonungWood(140, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("woodDef");
-	public static Block woodPine 	= new BlockKonungWoodPine(141, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("woodPine");
-	public static Block woodBirch 	= new BlockKonungWoodBirch(142, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("woodBirch");
-	public static Block woodJungle 	= new BlockKonungWoodJungle(143, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("woodJungle");
+	public static final Block woodDef 	= new BlockKonungWood(140, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("woodDef");
+	public static final Block woodPine 	= new BlockKonungWoodPine(141, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("woodPine");
+	public static final Block woodBirch 	= new BlockKonungWoodBirch(142, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("woodBirch");
+	public static final Block woodJungle 	= new BlockKonungWoodJungle(143, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("woodJungle");
 
-	public static Block logDef 		= new BlockKonungLog(144, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logDef");
-	public static Block logPine 	= new BlockKonungLogPine(145, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logPine");
-	public static Block logBirch 	= new BlockKonungLogBirch(146, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logBirch");
-	public static Block logJungle 	= new BlockKonungLogJungle(147, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logJungle");
+	public static final Block logDef 		= new BlockKonungLog(144, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logDef");
+	public static final Block logPine 	= new BlockKonungLogPine(145, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logPine");
+	public static final Block logBirch 	= new BlockKonungLogBirch(146, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logBirch");
+	public static final Block logJungle 	= new BlockKonungLogJungle(147, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logJungle");
 	
-	public static Block logVert 	= new BlockKonungVertLog(148, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logVert");
-	//public static Block logVPine 	= new BlockVerLogPine(149, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logVPine");
-	//public static Block logVBirch 	= new BlockVerLogBirch(150, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logVBirch");
-	//public static Block logVJungle 	= new BlockVerLogJungle(151, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logVJungle");
+	public static final Block logVert 	= new BlockKonungVertLog(148, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logVert");
 	
 	public static int WoodTop;
 	public static int WoodX;
@@ -41,7 +38,7 @@ public class mod_konungLog extends BaseMod
        
 	public String getVersion()
 	{
-       return "mod_log for 1.2.5";
+       return "mod for 1.2.5";
 	}
 
 	public void load()
@@ -142,8 +139,8 @@ public class mod_konungLog extends BaseMod
 	   ModLoader.addRecipe(new ItemStack(logVert,64,2), new Object[]{ "AB", Character.valueOf('A'), new ItemStack(Block.wood,1,2), Character.valueOf('B'), new ItemStack(Item.axeDiamond,1)});
 	   ModLoader.addRecipe(new ItemStack(logVert,64,3), new Object[]{ "AB", Character.valueOf('A'), new ItemStack(Block.wood,1,3), Character.valueOf('B'), new ItemStack(Item.axeDiamond,1)});
 	   //������� ������ ��������� ������ ��������������
-	   ModLoader.addRecipe(new ItemStack(logDef,4),		new Object[]{ "AB", Character.valueOf('A'), new ItemStack(mod_konungLog.woodDef,1), Character.valueOf('B'), Item.axeWood});
-	   ModLoader.addRecipe(new ItemStack(logPine,4),	new Object[]{ "AB", Character.valueOf('A'), new ItemStack(mod_konungLog.woodPine,1), Character.valueOf('B'), Item.axeWood});
+	   ModLoader.addRecipe(new ItemStack(logDef,4),		new Object[]{ "AB", Character.valueOf('A'), new ItemStack(mod_konungLog.woodDef,1), Character.valueOf('B'), new ItemStack(Item.axeWood,1)});
+	   ModLoader.addRecipe(new ItemStack(logPine,4),	new Object[]{ "AB", Character.valueOf('A'), new ItemStack(mod_konungLog.woodPine,1), Character.valueOf('B'), new ItemStack(Item.axeWood,1)});
 	   ModLoader.addRecipe(new ItemStack(logBirch,4),	new Object[]{ "AB", Character.valueOf('A'), new ItemStack(mod_konungLog.woodBirch,1), Character.valueOf('B'), new ItemStack(Item.axeWood,1)});
 	   ModLoader.addRecipe(new ItemStack(logJungle,4),	new Object[]{ "AB", Character.valueOf('A'), new ItemStack(mod_konungLog.woodJungle,1), Character.valueOf('B'), new ItemStack(Item.axeWood,1)});
 	   ModLoader.addRecipe(new ItemStack(logDef,8), 	new Object[]{ "AB", Character.valueOf('A'), new ItemStack(mod_konungLog.woodDef,1), Character.valueOf('B'), new ItemStack(Item.axeStone,1)});
@@ -173,10 +170,10 @@ public class mod_konungLog extends BaseMod
 	   ModLoader.addRecipe(new ItemStack(mod_konungLog.logVert,3,2), new Object[]{ "#", "#", "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.logBirch,1)});
 	   ModLoader.addRecipe(new ItemStack(mod_konungLog.logVert,3,3), new Object[]{ "#", "#", "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.logJungle,1)});
 	   //(����� ����� �������������� ������)
-	   ModLoader.addRecipe(new ItemStack(Block.planks,4,0), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.logDef,1)});
-	   ModLoader.addRecipe(new ItemStack(Block.planks,4,1), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.logPine,1)});
-	   ModLoader.addRecipe(new ItemStack(Block.planks,4,2), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.logBirch,1)});
-	   ModLoader.addRecipe(new ItemStack(Block.planks,4,3), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.logJungle,1)});
+	   ModLoader.addRecipe(new ItemStack(Block.planks,4,0), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.woodDef,1)});
+	   ModLoader.addRecipe(new ItemStack(Block.planks,4,1), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.woodPine,1)});
+	   ModLoader.addRecipe(new ItemStack(Block.planks,4,2), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.woodBirch,1)});
+	   ModLoader.addRecipe(new ItemStack(Block.planks,4,3), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.woodJungle,1)});
 	   //������� ��� �����
 	   ModLoader.addSmelting(mod_konungLog.logDef.blockID, new ItemStack(Item.coal, 1, 1));
 	   ModLoader.addSmelting(mod_konungLog.logPine.blockID, new ItemStack(Item.coal, 1, 1));
