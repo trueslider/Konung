@@ -20,746 +20,106 @@ public class WorldGenKonungStructure extends WorldGenerator
                 //   return false;
                 //}
                 
-                
-                //Ground - 0
-                world.setBlockAndMetadataWithNotify(i + 1, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 7, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 7, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 7, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 7, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 0, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 0, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 0, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 0, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 0, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 0, k + 2, bottom, 0);
-                
-                //Height - 1
-                world.setBlockAndMetadataWithNotify(i + 0, j + 1, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 0, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 1, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 1, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 1, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 1, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 1, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 1, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 1, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 1, k + 0, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 1, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 1, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 1, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 1, k + 13, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 1, k + 12, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 1, k + 11, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 1, k + 10, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 1, k + 9, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 1, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 1, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 1, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 1, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 1, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 1, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 1, k + 13, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 1, k + 12, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 1, k + 11, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 1, k + 10, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 1, k + 9, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 1, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 1, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 1, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 1, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 1, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 1, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 1, k + 0, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 1, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 1, k + 1, wall, 1);
-                
-                //Height - 2
-                world.setBlockAndMetadataWithNotify(i + 0, j + 2, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 0, j + 2, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 2, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 2, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 2, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 2, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 2, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 2, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 2, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 2, k + 0, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 2, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 2, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 2, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 2, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 2, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 13, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 12, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 11, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 10, window, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 9, window, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 1, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 2, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 2, k + 1, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 2, k + 12, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 2, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 2, k + 12, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 2, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 2, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 2, k + 1, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 13, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 12, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 11, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 10, window, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 9, window, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 1, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 2, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 2, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 2, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 2, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 2, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 2, k + 0, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 2, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 2, k + 1, wall, 1);
-                
-                //Height - 3
-                world.setBlockAndMetadataWithNotify(i + 0, j + 3, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 0, j + 3, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 3, k + 0, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 3, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 3, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 3, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 3, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 3, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 13, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 12, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 11, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 10, window, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 9, window, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 1, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 3, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 3, k + 1, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 3, k + 12, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 3, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 3, k + 12, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 3, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 3, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 3, k + 1, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 13, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 12, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 11, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 10, window, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 9, window, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 1, window, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 3, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 3, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 3, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 3, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 3, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 3, k + 0, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 3, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 3, k + 1, wall, 1);
-                
-                //Height - 4
-                world.setBlockAndMetadataWithNotify(i + 0, j + 4, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 0, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 4, k + 0, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 4, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 4, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 4, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 4, k + 13, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 4, k + 12, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 4, k + 11, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 4, k + 10, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 4, k + 9, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 4, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 4, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 4, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 4, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 4, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 4, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 4, k + 13, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 4, k + 12, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 4, k + 11, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 4, k + 10, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 4, k + 9, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 4, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 4, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 4, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 4, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 4, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 4, k + 1, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 8, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 4, k + 0, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 4, k + 7, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 4, k + 1, wall, 1);
-                
-                //Height - 5
-                world.setBlockAndMetadataWithNotify(i + 0, j + 5, k + 8, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 0, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 8, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 8, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 7, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 13, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 12, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 11, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 10, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 9, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 8, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 7, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 7, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 7, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 7, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 7, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 7, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 11, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 10, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 9, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 8, bottom, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 7, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 13, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 12, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 11, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 10, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 9, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 8, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 7, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 8, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 7, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 6, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 5, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 4, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 3, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 2, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 1, bottom, 0);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 8, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 7, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 1, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 5, k + 0, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 5, k + 8, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 5, k + 0, roof, 1);
-                
-                //Height - 6
-                world.setBlockAndMetadataWithNotify(i + 0, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 0, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 6, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 6, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 6, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 6, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 6, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 13, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 12, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 11, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 10, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 9, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 8, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 11, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 10, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 9, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 8, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 7, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 11, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 10, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 9, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 8, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 7, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 11, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 10, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 9, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 8, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 7, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 11, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 10, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 9, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 8, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 7, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 13, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 12, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 11, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 10, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 9, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 8, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 6, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 6, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 6, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 6, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 6, k + 2, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 6, k + 6, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 6, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 6, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 6, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 6, k + 2, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 6, k + 1, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 6, k + 7, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 6, k + 1, roof, 1);
-                
-                //Height - 7
-                world.setBlockAndMetadataWithNotify(i + 0, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 0, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 7, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 7, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 7, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 13, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 12, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 11, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 10, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 9, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 8, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 7, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 11, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 10, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 9, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 8, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 7, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 12, wall, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 11, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 10, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 9, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 8, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 7, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 6, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 13, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 12, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 11, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 10, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 9, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 8, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 7, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 7, k + 5, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 7, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 7, k + 3, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 7, k + 5, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 7, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 7, k + 3, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 7, k + 2, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 7, k + 6, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 7, k + 2, roof, 1);
-                
-                //Height - 8
-                world.setBlockAndMetadataWithNotify(i + 0, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 0, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 8, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 13, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 12, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 11, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 10, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 9, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 8, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 7, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 6, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 13, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 12, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 11, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 10, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 9, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 8, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 7, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 6, roof, 0);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 8, k + 4, 5, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 8, k + 4, wall, 0);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 8, k + 3, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 8, k + 5, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 8, k + 3, roof, 1);
-                
-                //Height - 9
-                world.setBlockAndMetadataWithNotify(i + 0, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 1, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 2, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 3, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 4, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 5, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 6, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 7, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 8, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 9, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 10, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 11, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 12, j + 9, k + 4, roof, 1);
-                world.setBlockAndMetadataWithNotify(i + 13, j + 9, k + 4, roof, 1);
-                
+        	
+        	//Пол
+        	for(int x = 2; x <= 11; x++)
+        	{
+        		for(int z = 2; z <= 6; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j, k + z, bottom, 0);
+        		}
+        	}
+        	
+        	for(int x = 5; x <= 8; x++)
+        	{
+        		for(int z = 7; z <= 11; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j, k + z, bottom, 1);
+        		}
+        	}
+        	
+        	//Потолок
+        	for(int x = 2; x <= 11; x++)
+        	{
+        		for(int z = 2; z <= 6; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 5, k + z, bottom, 0);
+        		}
+        	}
+        	
+        	for(int x = 5; x <= 8; x++)
+        	{
+        		for(int z = 7; z <= 11; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 5, k + z, bottom, 1);
+        		}
+        	}
+        	
+        	//Высота
+        	for (int h = 0; h <= 4; h++)
+        	{
+        		//Стены
+        		for(int z = 0; z <= 8; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + 1, j + h, k + z, wall, 0);
+        		}
+        		
+        		for(int z = 0; z <= 8; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + 12, j + h, k + z, wall, 0);
+        		}
+        		
+        		for(int x = 0; x <= 13; x++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + h, k + 1, wall, 1);
+        		}
+        		
+        		for(int x = 0; x <= 3; x++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + h, k + 7, wall, 1);
+        		}
+        		
+        		for(int x = 10; x <= 13; x++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + h, k + 7, wall, 1);
+        		}
+        		
+        		for(int z = 7; z <= 13; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + 4, j + h, k + z, wall, 0);
+        		}
+        		
+        		for(int z = 7; z <= 13; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + 9, j + h, k + z, wall, 0);
+        		}
+        		
+        		for(int x = 3; x <= 10; x++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + h, k + 12, wall, 1);
+        		}
+        	}
+        	
+        	//Крыша
+       	    for (int z = 0; z <= 4; z++)
+            {
+                for (int x = 0; x <= 13; x++)
+                {
+                	world.setBlockAndMetadataWithNotify(i + x, j + z + 5, k + z, wall, 1);
+    				world.setBlockAndMetadataWithNotify(i + x, j + 5 + z, k + 8 - z, wall, 1);
+                }
+            }
+       	    
+       	    for (int z = 0; z <= 13; z++)
+            {
+                for (int x = 0; x <= 4; x++)
+                {
+                	world.setBlockAndMetadataWithNotify(i + x, j + z + 5, k + z, wall, 1);
+    				world.setBlockAndMetadataWithNotify(i + 8 - x, j + 5 + z, k + z, wall, 1);
+                }
+            }
+
+        	
                 return true;
         }
  
