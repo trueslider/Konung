@@ -1,4 +1,4 @@
-package net.minecraft.src;
+ï»¿package net.minecraft.src;
 
 import java.util.Random;
 
@@ -21,7 +21,7 @@ public class WorldGenKonungStructure extends WorldGenerator
                 //}
                 
         	
-        	//Ïîë
+        	//ĞŸĞ¾Ğ»
         	for(int x = 2; x <= 11; x++)
         	{
         		for(int z = 2; z <= 6; z++)
@@ -38,7 +38,7 @@ public class WorldGenKonungStructure extends WorldGenerator
         		}
         	}
         	
-        	//Ïîòîëîê
+        	//ĞŸĞ¾Ñ‚Ğ¾Ğ»Ğ¾Ğº
         	for(int x = 2; x <= 11; x++)
         	{
         		for(int z = 2; z <= 6; z++)
@@ -55,10 +55,10 @@ public class WorldGenKonungStructure extends WorldGenerator
         		}
         	}
         	
-        	//Âûñîòà
+        	//Ğ’Ñ‹ÑĞ¾Ñ‚Ğ°
         	for (int h = 0; h <= 4; h++)
         	{
-        		//Ñòåíû
+        		//Ğ¡Ñ‚ĞµĞ½Ñ‹
         		for(int z = 0; z <= 8; z++)
         		{
         			world.setBlockAndMetadataWithNotify(i + 1, j + h, k + z, wall, 0);
@@ -100,7 +100,7 @@ public class WorldGenKonungStructure extends WorldGenerator
         		}
         	}
         	
-        	//Êğûøà
+        	//ĞšÑ€Ñ‹ÑˆĞ°
        	    for (int z = 0; z <= 4; z++)
             {
                 for (int x = 0; x <= 13; x++)
@@ -110,14 +110,80 @@ public class WorldGenKonungStructure extends WorldGenerator
                 }
             }
        	    
-       	    for (int z = 0; z <= 13; z++)
+       	    for (int x = 0; x <= 3; x++)
             {
-                for (int x = 0; x <= 4; x++)
+                for (int z = 5; z <= 13; z++)
                 {
-                	world.setBlockAndMetadataWithNotify(i + x, j + z + 5, k + z, wall, 1);
-    				world.setBlockAndMetadataWithNotify(i + 8 - x, j + 5 + z, k + z, wall, 1);
+                	world.setBlockAndMetadataWithNotify(i + x + 3, j + x + 5, k + z, wall, 0);
+    				world.setBlockAndMetadataWithNotify(i + 10 - x, j + 5 + x, k + z, wall, 0);
                 }
             }
+       	    
+       	    //ĞĞ°Ğ¿Ğ¾Ğ»Ğ½ĞµĞ½Ğ¸Ğµ ĞºÑ€Ñ‹ÑˆĞ¸
+        	for(int x = 1; x <= 12; x++)
+        	{
+        		for(int z = 1; z <= 7; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 5, k + z, roof, 0);
+        		}
+        		for(int z = 2; z <= 6; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 6, k + z, roof, 0);
+        		}
+        		for(int z = 3; z <= 5; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 7, k + z, roof, 0);
+        		}
+        		for(int z = 4; z <= 4; z++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 8, k + z, roof, 0);
+        		}
+        	}
+        	
+        	for(int z = 7; z <= 12; z++)
+        	{
+        		for(int x = 4; x <= 9; x++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 5, k + z, roof, 1);
+        		}
+        		for(int x = 5; x <= 8; x++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 6, k + z, roof, 1);
+        		}
+        		for(int x = 6; x <= 7; x++)
+        		{
+        			world.setBlockAndMetadataWithNotify(i + x, j + 7, k + z, roof, 1);
+        		}
+        	}
+        	
+        	//ĞĞºĞ½Ğ°
+        	world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 1, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 5, j + 2, k + 1, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 1, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 5, j + 3, k + 1, window, 0);
+        	
+        	world.setBlockAndMetadataWithNotify(i + 8, j + 2, k + 1, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 1, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 8, j + 3, k + 1, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 1, window, 0);
+        	
+        	world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 9, window, 1);
+        	world.setBlockAndMetadataWithNotify(i + 4, j + 2, k + 10, window, 1);
+        	world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 9, window, 1);
+        	world.setBlockAndMetadataWithNotify(i + 4, j + 3, k + 10, window, 1);
+        	
+        	world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 9, window, 1);
+        	world.setBlockAndMetadataWithNotify(i + 9, j + 2, k + 10, window, 1);
+        	world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 9, window, 1);
+        	world.setBlockAndMetadataWithNotify(i + 9, j + 3, k + 10, window, 1);
+        	
+        	world.setBlockAndMetadataWithNotify(i + 6, j + 2, k + 12, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 7, j + 2, k + 12, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 6, j + 3, k + 12, window, 0);
+        	world.setBlockAndMetadataWithNotify(i + 7, j + 3, k + 12, window, 0);
+        	
+			//Ğ”Ğ²ĞµÑ€ÑŒ
+        	ItemDoor.placeDoorBlock(world, i + 1, j + 1, k + 4, 0, Block.doorWood);
 
         	
                 return true;
