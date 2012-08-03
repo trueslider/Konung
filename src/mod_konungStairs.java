@@ -1,13 +1,13 @@
-//Комментарий
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 package net.minecraft.src;
 
 public class mod_konungStairs extends BaseMod
 {
 	
-	public static final Block defStairs = (new BlockKonungStairs(170,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayStairs");
-	public static final Block pineStairs = (new BlockKonungStairs(171,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayStairs");
-	public static final Block birchStairs = (new BlockKonungStairs(172,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayStairs");
-	public static final Block jungleStairs = (new BlockKonungStairs(173,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayStairs");
+	public static final Block defStairs = (new BlockKonungStairs(170,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("defStairs");
+	public static final Block pineStairs = (new BlockKonungStairs(171,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("pineStairs");
+	public static final Block birchStairs = (new BlockKonungStairs(172,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("birchStairs");
+	public static final Block jungleStairs = (new BlockKonungStairs(173,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("jungleStairs");
 	
 	public mod_konungStairs()
 	{
