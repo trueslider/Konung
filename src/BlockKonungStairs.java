@@ -2,6 +2,7 @@
 package net.minecraft.src;
 
 import java.util.ArrayList;
+import java.util.List;
 public class BlockKonungStairs extends Block
 {
                 public BlockKonungStairs(int i, int j)
@@ -9,7 +10,7 @@ public class BlockKonungStairs extends Block
                                 super(i, j, Material.grass);
                 }
           
-                public void getCollidingBoundingBoxes(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB, ArrayList par6ArrayList)
+                public void addCollidingBlockToList(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB, List par6List, Entity par7Entity)
                 {
                     int i = par1World.getBlockMetadata(par2, par3, par4);
                     int j = i & 3;
@@ -26,31 +27,31 @@ public class BlockKonungStairs extends Block
                         f3 = 0.5F;
                     }
 
-                    setBlockBounds(0.0F, f, 0.0F, 1.0F, f1, 1.0F);
-                    super.getCollidingBoundingBoxes(par1World, par2, par3, par4, par5AxisAlignedBB, par6ArrayList);
+                    this.setBlockBounds(0.0F, f, 0.0F, 1.0F, f1, 1.0F);
+                    super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
 
                     if (j == 0)
                     {
-                        setBlockBounds(0.5F, f2, 0.0F, 1.0F, f3, 1.0F);
-                        super.getCollidingBoundingBoxes(par1World, par2, par3, par4, par5AxisAlignedBB, par6ArrayList);
+                    	this.setBlockBounds(0.5F, f2, 0.0F, 1.0F, f3, 1.0F);
+                        super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
                     }
                     else if (j == 1)
                     {
-                        setBlockBounds(0.0F, f2, 0.0F, 0.5F, f3, 1.0F);
-                        super.getCollidingBoundingBoxes(par1World, par2, par3, par4, par5AxisAlignedBB, par6ArrayList);
+                    	this.setBlockBounds(0.0F, f2, 0.0F, 0.5F, f3, 1.0F);
+                        super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
                     }
                     else if (j == 2)
                     {
-                        setBlockBounds(0.0F, f2, 0.5F, 1.0F, f3, 1.0F);
-                        super.getCollidingBoundingBoxes(par1World, par2, par3, par4, par5AxisAlignedBB, par6ArrayList);
+                    	this.setBlockBounds(0.0F, f2, 0.5F, 1.0F, f3, 1.0F);
+                        super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
                     }
                     else if (j == 3)
                     {
-                        setBlockBounds(0.0F, f2, 0.0F, 1.0F, f3, 0.5F);
-                        super.getCollidingBoundingBoxes(par1World, par2, par3, par4, par5AxisAlignedBB, par6ArrayList);
+                    	this.setBlockBounds(0.0F, f2, 0.0F, 1.0F, f3, 0.5F);
+                        super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
                     }
 
-                    setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
+                    this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
                 }
                 /**
                  * Called when the block is placed in the world.

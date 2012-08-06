@@ -63,7 +63,7 @@ public class EntityKonungMountableBlock extends Entity
         }
         public void onEntityUpdate()
         {
-                Profiler.startSection("entityBaseTick");
+                //Profiler.startSection("entityBaseTick");
                 if (riddenByEntity == null || riddenByEntity.isDead)
                 {
                         setDead();
@@ -73,7 +73,7 @@ public class EntityKonungMountableBlock extends Entity
                         interact((EntityPlayer) riddenByEntity);
                 }
                 ticksExisted++;
-                Profiler.endSection();
+                //Profiler.endSection();
         }
         //Следующие методы требуют Entity класса, но я не знаю, для чего они нужны:D
         public void entityInit() {}

@@ -72,4 +72,9 @@ public class BlockKonungWoodTablePine extends BlockContainer
                                 }
                                 par1World.setBlockMetadataWithNotify(par2, par3, par4, byte0);
         }
+	@Override
+	public TileEntity createNewTileEntity(World var1) {
+
+		return new TileEntityKonungWoodTablePine();
+	}
 }

@@ -1,6 +1,7 @@
 package net.minecraft.src;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class BlockKonungWoodBench extends BlockContainer
@@ -76,10 +77,10 @@ public class BlockKonungWoodBench extends BlockContainer
                                 par1World.setBlockMetadataWithNotify(par2, par3, par4, byte0);
         }
               
-       public void getCollidingBoundingBoxes(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB, ArrayList par6ArrayList)
+       public void addCollidingBlockToList(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB, List par6List, Entity par7Entity)
        {
-           setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
-           super.getCollidingBoundingBoxes(par1World, par2, par3, par4, par5AxisAlignedBB, par6ArrayList);
+    	   this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
+           super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
        }
        
        /* взято из Seatable Chairs 1.3 by ITOS*/
@@ -116,5 +117,11 @@ public class BlockKonungWoodBench extends BlockContainer
                world.setBlockMetadataWithNotify(i, j, k, 0);
            }
        }
+
+	@Override
+	public TileEntity createNewTileEntity(World var1) {
+
+		return new TileEntityKonungWoodBench();
+	}
        
 }

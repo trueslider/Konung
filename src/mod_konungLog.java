@@ -92,10 +92,10 @@ public class mod_konungLog extends BaseMod
 	   	ModLoader.addRecipe(new ItemStack(Block.planks,4,2), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.logVert,1,2)});
 	   	ModLoader.addRecipe(new ItemStack(Block.planks,4,3), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungLog.logVert,1,3)});
 	   	//recipe for furnace
-	   	ModLoader.addSmelting(mod_konungLog.logDef.blockID, new ItemStack(Item.coal, 1, 1));
-	   	ModLoader.addSmelting(mod_konungLog.logPine.blockID, new ItemStack(Item.coal, 1, 1));
-	   	ModLoader.addSmelting(mod_konungLog.logBirch.blockID, new ItemStack(Item.coal, 1, 1));
-	   	ModLoader.addSmelting(mod_konungLog.logJungle.blockID, new ItemStack(Item.coal, 1, 1));
-	   	ModLoader.addSmelting(mod_konungLog.logVert.blockID, new ItemStack(Item.coal, 1, 1));
+	   	ModLoader.addSmelting(mod_konungLog.logDef.blockID, new ItemStack(Item.coal, 1, 1), 10);
+	   	ModLoader.addSmelting(mod_konungLog.logPine.blockID, new ItemStack(Item.coal, 1, 1), 10);
+	   	ModLoader.addSmelting(mod_konungLog.logBirch.blockID, new ItemStack(Item.coal, 1, 1), 10);
+	   	ModLoader.addSmelting(mod_konungLog.logJungle.blockID, new ItemStack(Item.coal, 1, 1), 10);
+	   	ModLoader.addSmelting(mod_konungLog.logVert.blockID, new ItemStack(Item.coal, 1, 1), 10);
 	}
 }		

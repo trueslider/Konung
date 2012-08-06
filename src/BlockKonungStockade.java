@@ -2,6 +2,7 @@
 package net.minecraft.src;
 
 import java.util.ArrayList;
+import java.util.List;
 public class BlockKonungStockade extends Block
 {	
     public BlockKonungStockade(int i, int j, Material material)
@@ -30,14 +31,14 @@ public class BlockKonungStockade extends Block
         return true;        
     }
 	
-	public void getCollidingBoundingBoxes(World world, int i, int j, int k, AxisAlignedBB axisalignedbb, ArrayList arraylist)
+	public void addCollidingBlockToList(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB, List par6List, Entity par7Entity)
     {
-        int l = world.getBlockMetadata(i, j, k)%8;
+        int l = par1World.getBlockMetadata(par2, par3, par4)%8;
         
-            setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
-            super.getCollidingBoundingBoxes(world, i, j, k, axisalignedbb, arraylist);
-            setBlockBounds(0.35F, 0.5F, 0.35F, 0.65F, 1.0F, 0.65F);
-            super.getCollidingBoundingBoxes(world, i, j, k, axisalignedbb, arraylist);
+        	this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
+            super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
+            this.setBlockBounds(0.35F, 0.5F, 0.35F, 0.65F, 1.0F, 0.65F);
+            super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
        
 		setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.75F, 1.0F);
     }

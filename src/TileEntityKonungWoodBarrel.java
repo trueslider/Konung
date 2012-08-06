@@ -271,7 +271,7 @@ public class TileEntityKonungWoodBarrel extends TileEntity implements IInventory
 
             if ((++ticksSinceSync % 20) * 4 == 0)
             {
-                worldObj.playNoteAt(xCoord, yCoord, zCoord, 1, numUsingPlayers);
+                ;
             }
 
             prevLidAngle = lidAngle;
@@ -348,16 +348,28 @@ public class TileEntityKonungWoodBarrel extends TileEntity implements IInventory
             }
         }
 
+//        public void openChest()
+//        {
+//            numUsingPlayers++;
+//            worldObj.playNoteAt(xCoord, yCoord, zCoord, 1, numUsingPlayers);
+//        }
+//
+//        public void closeChest()
+//        {
+//            numUsingPlayers--;
+//            worldObj.playNoteAt(xCoord, yCoord, zCoord, 1, numUsingPlayers);
+//        }
+        
         public void openChest()
         {
-            numUsingPlayers++;
-            worldObj.playNoteAt(xCoord, yCoord, zCoord, 1, numUsingPlayers);
+            ++this.numUsingPlayers;
+            this.worldObj.addBlockEvent(this.xCoord, this.yCoord, this.zCoord, Block.chest.blockID, 1, this.numUsingPlayers);
         }
 
         public void closeChest()
         {
-            numUsingPlayers--;
-            worldObj.playNoteAt(xCoord, yCoord, zCoord, 1, numUsingPlayers);
+            --this.numUsingPlayers;
+            this.worldObj.addBlockEvent(this.xCoord, this.yCoord, this.zCoord, Block.chest.blockID, 1, this.numUsingPlayers);
         }
 
         /**

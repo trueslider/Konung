@@ -36,7 +36,7 @@ public class BlockKonungMountable extends Block
 		if (!world.isRemote)
 		{
 			//Looks for EMBs up to 1 block away from the activated block. Hopefully you didn't set the mounting position further away than this.
-			List<EntityKonungMountableBlock> list = world.getEntitiesWithinAABB(EntityKonungMountableBlock.class, AxisAlignedBB.getBoundingBoxFromPool(i, j, k, i + 1.0D, j + 1.0D, k + 1.0D).expand(1D, 1D, 1D));
+			List<EntityKonungMountableBlock> list = world.getEntitiesWithinAABB(EntityKonungMountableBlock.class, AxisAlignedBB.getBoundingBox(i, j, k, i + 1.0D, j + 1.0D, k + 1.0D).expand(1D, 1D, 1D));
 	    	for (EntityKonungMountableBlock entitytocheck : list)
 	    	{
 	    		//Looks for an EMB created by this block.

@@ -2,15 +2,16 @@ package net.minecraft.src;
 
 import java.util.*;
 
+
 public class BlockKonungWoodBarrel extends BlockContainer
 {		
-		private Random randombarrel;
+		private Random random;
         private Class WoodEntityClass;
         
         public BlockKonungWoodBarrel(int i, Class class1)
         {
                 super(i, Material.wood);
-                randombarrel = new Random();
+                random = new Random();
                 WoodEntityClass = class1;
         }
         
@@ -114,56 +115,51 @@ public class BlockKonungWoodBarrel extends BlockContainer
             }
         }
 
-
         /**
-         * Called whenever the block is removed.
+         * ejects contained items into the world, and notifies neighbours of an update, as appropriate
          */
-        public void onBlockRemoval(World par1World, int par2, int par3, int par4)
+        public void breakBlock(World par1World, int par2, int par3, int par4, int par5, int par6)
         {
-            TileEntityKonungWoodBarrel tileentitykonungwoodbarrel = (TileEntityKonungWoodBarrel)par1World.getBlockTileEntity(par2, par3, par4);
+        	TileEntityKonungWoodBarrel var7 = (TileEntityKonungWoodBarrel)par1World.getBlockTileEntity(par2, par3, par4);
 
-            if (tileentitykonungwoodbarrel != null)
+            if (var7 != null)
             {
-                for (int i = 0; i < tileentitykonungwoodbarrel.getSizeInventory(); i++)
+                for (int var8 = 0; var8 < var7.getSizeInventory(); ++var8)
                 {
-                    ItemStack itemstack = tileentitykonungwoodbarrel.getStackInSlot(i);
+                    ItemStack var9 = var7.getStackInSlot(var8);
 
-                    if (itemstack == null)
+                    if (var9 != null)
                     {
-                        continue;
-                    }
+                        float var10 = this.random.nextFloat() * 0.8F + 0.1F;
+                        float var11 = this.random.nextFloat() * 0.8F + 0.1F;
+                        EntityItem var14;
 
-                    float f0 = randombarrel.nextFloat() * 0.8F + 0.1F;
-                    float f1 = randombarrel.nextFloat() * 0.8F + 0.1F;
-                    float f2 = randombarrel.nextFloat() * 0.8F + 0.1F;
-
-                    while (itemstack.stackSize > 0)
-                    {
-                        int j = randombarrel.nextInt(21) + 10;
-
-                        if (j > itemstack.stackSize)
+                        for (float var12 = this.random.nextFloat() * 0.8F + 0.1F; var9.stackSize > 0; par1World.spawnEntityInWorld(var14))
                         {
-                            j = itemstack.stackSize;
+                            int var13 = this.random.nextInt(21) + 10;
+
+                            if (var13 > var9.stackSize)
+                            {
+                                var13 = var9.stackSize;
+                            }
+
+                            var9.stackSize -= var13;
+                            var14 = new EntityItem(par1World, (double)((float)par2 + var10), (double)((float)par3 + var11), (double)((float)par4 + var12), new ItemStack(var9.itemID, var13, var9.getItemDamage()));
+                            float var15 = 0.05F;
+                            var14.motionX = (double)((float)this.random.nextGaussian() * var15);
+                            var14.motionY = (double)((float)this.random.nextGaussian() * var15 + 0.2F);
+                            var14.motionZ = (double)((float)this.random.nextGaussian() * var15);
+
+                            if (var9.hasTagCompound())
+                            {
+                                var14.item.setTagCompound((NBTTagCompound)var9.getTagCompound().copy());
+                            }
                         }
-
-                        itemstack.stackSize -= j;
-                        EntityItem entitybarrelitem = new EntityItem(par1World, (float)par2 + f0, (float)par3 + f1, (float)par4 + f2, new ItemStack(itemstack.itemID, j, itemstack.getItemDamage()));
-                        float f3 = 0.05F;
-                        entitybarrelitem.motionX = (float)randombarrel.nextGaussian() * f3;
-                        entitybarrelitem.motionY = (float)randombarrel.nextGaussian() * f3 + 0.2F;
-                        entitybarrelitem.motionZ = (float)randombarrel.nextGaussian() * f3;
-
-                        if (itemstack.hasTagCompound())
-                        {
-                            entitybarrelitem.item.setTagCompound((NBTTagCompound)itemstack.getTagCompound().copy());
-                        }
-
-                        par1World.spawnEntityInWorld(entitybarrelitem);
                     }
                 }
             }
 
-            super.onBlockRemoval(par1World, par2, par3, par4);
+            super.breakBlock(par1World, par2, par3, par4, par5, par6);
         }
 
         /**
@@ -230,7 +226,7 @@ public class BlockKonungWoodBarrel extends BlockContainer
 
         private static boolean func_50075_j(World par0World, int par1, int par2, int par3)
         {
-            for (Iterator iterator = par0World.getEntitiesWithinAABB(net.minecraft.src.EntityOcelot.class, AxisAlignedBB.getBoundingBoxFromPool(par1, par2 + 1, par3, par1 + 1, par2 + 2, par3 + 1)).iterator(); iterator.hasNext();)
+            for (Iterator iterator = par0World.getEntitiesWithinAABB(net.minecraft.src.EntityOcelot.class, AxisAlignedBB.getBoundingBox(par1, par2 + 1, par3, par1 + 1, par2 + 2, par3 + 1)).iterator(); iterator.hasNext();)
             {
                 Entity entity = (Entity)iterator.next();
                 EntityOcelot entityocelot = (EntityOcelot)entity;
@@ -243,6 +239,12 @@ public class BlockKonungWoodBarrel extends BlockContainer
 
             return false;
         }
+
+		@Override
+		public TileEntity createNewTileEntity(World var1) {
+
+			return new TileEntityKonungWoodBarrel();
+		}
         
         
        /* //Указывает TileEntity для блока
