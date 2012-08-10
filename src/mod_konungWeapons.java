@@ -54,6 +54,6 @@ public class mod_konungWeapons extends BaseMod
 	public void load(){};
 	public String getVersion()
 	{
-		return "1.2.5";
+		return "1.3.1";
 	}
 }

@@ -38,6 +38,6 @@ public class mod_konungStairs extends BaseMod
 	
 	
 	public void load(){};
-	public String getVersion(){return "1.2.5";}
+	public String getVersion(){return "1.3.1";}
 	
 }

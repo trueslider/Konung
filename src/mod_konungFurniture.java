@@ -33,7 +33,7 @@ public class mod_konungFurniture extends BaseMod
 	
 	public String getVersion()
 	{
-		return "1.2.5";
+		return "1.3.1";
 	}
 	
 	public void load()

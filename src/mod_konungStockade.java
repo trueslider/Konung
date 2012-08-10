@@ -1215,7 +1215,7 @@ public class mod_konungStockade extends BaseMod
 
 
 	public String getVersion() {
-		return "1.2.5";
+		return "1.3.1";
 	}
 
 	@Override

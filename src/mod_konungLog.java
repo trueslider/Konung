@@ -25,7 +25,7 @@ public class mod_konungLog extends BaseMod
        
 	public String getVersion()
 	{
-       return "mod for 1.2.5";
+       return "mod for 1.3.1";
 	}
 
 	public void load()
