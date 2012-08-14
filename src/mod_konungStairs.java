@@ -1,13 +1,11 @@
-//�����������
 package net.minecraft.src;
 
 public class mod_konungStairs extends BaseMod
-{
-	
-	public static final Block defStairs = (new BlockKonungStairs(170,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("defStairs");
-	public static final Block pineStairs = (new BlockKonungStairs(171,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("pineStairs");
-	public static final Block birchStairs = (new BlockKonungStairs(172,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("birchStairs");
-	public static final Block jungleStairs = (new BlockKonungStairs(173,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("jungleStairs");
+{	
+	public static final Block defStairs = (new BlockKonungStairs(170,0)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("defStairs");
+	public static final Block pineStairs = (new BlockKonungStairs(171,0)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("pineStairs");
+	public static final Block birchStairs = (new BlockKonungStairs(172,0)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("birchStairs");
+	public static final Block jungleStairs = (new BlockKonungStairs(173,0)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("jungleStairs");
 	
 	public mod_konungStairs()
 	{
@@ -26,10 +24,10 @@ public class mod_konungStairs extends BaseMod
 		birchStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_birch_stair.png");
 		jungleStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_jungle_stair.png");
 		
-		ModLoader.addRecipe(new ItemStack(defStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungLog.logDef,1)});
-		ModLoader.addRecipe(new ItemStack(pineStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungLog.logPine,1)});
-		ModLoader.addRecipe(new ItemStack(birchStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungLog.logBirch,1)});
-		ModLoader.addRecipe(new ItemStack(jungleStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungLog.logJungle,1)});
+		ModLoader.addRecipe(new ItemStack(defStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.defPlanks,1)});
+		ModLoader.addRecipe(new ItemStack(pineStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.pinePlanks,1)});
+		ModLoader.addRecipe(new ItemStack(birchStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.birchPlanks,1)});
+		ModLoader.addRecipe(new ItemStack(jungleStairs, 3), new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.junglePlanks,1)});
 
 	}
 	
