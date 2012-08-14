@@ -1,4 +1,3 @@
-//Комментарий
 package net.minecraft.src;
 
 import net.minecraft.client.Minecraft;
@@ -1214,13 +1213,6 @@ public class mod_konungStockade extends BaseMod
     }
 
 
-	public String getVersion() {
-		return "1.3.1";
-	}
-
-	@Override
-	public void load() {
-		// TODO Auto-generated method stub
-		
-	}	
+	public void load(){};
+	public String getVersion(){return "1.3.1";}
 }
