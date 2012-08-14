@@ -1,4 +1,3 @@
-//Комментарий
 package net.minecraft.src;
 
 import java.util.Random;
@@ -49,11 +48,6 @@ public class mod_konungWeapons extends BaseMod
 	}
 	
 	
-
-	
 	public void load(){};
-	public String getVersion()
-	{
-		return "1.3.1";
-	}
+	public String getVersion(){return "1.3.1";}
 }
