@@ -1,14 +1,13 @@
-//Комментарий
 package net.minecraft.src;
 
 import java.util.Random;
 
 public class mod_konungLog extends BaseMod
 {
-	public static final Block logDef 	= new BlockKonungLog(144, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logDef");
-	public static final Block logPine 	= new BlockKonungLogPine(145, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logPine");
-	public static final Block logBirch 	= new BlockKonungLogBirch(146, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logBirch");
-	public static final Block logJungle = new BlockKonungLogJungle(147, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logJungle");
+	public static final Block logDef 	= new BlockKonungLog(144, 0).setHardness(2.0F).setResistance(5.0F).setStepSound(Block.soundWoodFootstep).setBlockName("logDef");
+	public static final Block logPine 	= new BlockKonungLogPine(145, 0).setHardness(2.0F).setResistance(5.0F).setStepSound(Block.soundWoodFootstep).setBlockName("logPine");
+	public static final Block logBirch 	= new BlockKonungLogBirch(146, 0).setHardness(2.0F).setResistance(5.0F).setStepSound(Block.soundWoodFootstep).setBlockName("logBirch");
+	public static final Block logJungle = new BlockKonungLogJungle(147, 0).setHardness(2.0F).setResistance(5.0F).setStepSound(Block.soundWoodFootstep).setBlockName("logJungle");
 	
 	public static final Block logVert 	= new BlockKonungVertLog(148, 0).setHardness(2.0F).setResistance(5.0F).setBlockName("logVert");
 	
@@ -21,14 +20,8 @@ public class mod_konungLog extends BaseMod
 	public static int LogYPine;
 	public static int LogYBirch;
 	public static int LogYJungle;
-	
-       
-	public String getVersion()
-	{
-       return "mod for 1.3.1";
-	}
 
-	public void load()
+	public mod_konungLog()
 	{	
 		ModLoader.registerBlock(logDef);
       	ModLoader.registerBlock(logPine);
@@ -50,15 +43,15 @@ public class mod_konungLog extends BaseMod
       
       	//add name
    	   	ModLoader.addName(logDef, "Refined Wood");
-      	ModLoader.addName(logPine, "Refined Wood");
-      	ModLoader.addName(logBirch, "Refined Wood");
-      	ModLoader.addName(logJungle, "Refined Woodd");
+      	ModLoader.addName(logPine, "Refined Pine Wood");
+      	ModLoader.addName(logBirch, "Refined Birch Wood");
+      	ModLoader.addName(logJungle, "Refined Jungle Woodd");
       	
       	
     	ModLoader.addName(new ItemStack(logVert,1,0), "Refined Wood");
-    	ModLoader.addName(new ItemStack(logVert,1,1), "Refined Wood");
-    	ModLoader.addName(new ItemStack(logVert,1,2), "Refined Wood");
-    	ModLoader.addName(new ItemStack(logVert,1,3), "Refined Wood");
+    	ModLoader.addName(new ItemStack(logVert,1,1), "Refined Pine Wood");
+    	ModLoader.addName(new ItemStack(logVert,1,2), "Refined Birch Wood");
+    	ModLoader.addName(new ItemStack(logVert,1,3), "Refined Jungle Wood");
     	
     	//recipe
  	   	//create horizontal clear wood from wood
@@ -98,4 +91,7 @@ public class mod_konungLog extends BaseMod
 	   	ModLoader.addSmelting(mod_konungLog.logJungle.blockID, new ItemStack(Item.coal, 1, 1), 10);
 	   	ModLoader.addSmelting(mod_konungLog.logVert.blockID, new ItemStack(Item.coal, 1, 1), 10);
 	}
+	
+	public void load(){};
+	public String getVersion(){return "1.3.1";}
 }		
