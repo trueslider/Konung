@@ -1,4 +1,3 @@
-//Комментарий
 package net.minecraft.src;
 
 import java.util.Random;
@@ -69,7 +68,7 @@ public class EntityKonungSpider extends EntitySpider
     
     protected Entity findPlayerToAttack()
     {
-        return worldObj.getClosestVulnerablePlayerToEntity(this, 16D);
+        return worldObj.getClosestVulnerablePlayerToEntity(this, 2D);
     }
     
     protected void attackEntity(Entity par1Entity, float par2)
