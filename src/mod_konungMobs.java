@@ -1,4 +1,3 @@
-//Комментарий
 package net.minecraft.src;
 
 import java.util.Map;
