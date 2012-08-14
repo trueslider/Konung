@@ -1,4 +1,3 @@
-//Комментарий
 package net.minecraft.src;
 
 public class ItemKonungStockade extends ItemBlock

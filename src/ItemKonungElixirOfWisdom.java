@@ -1,4 +1,3 @@
-//Комментарий
 package net.minecraft.src;
 
 public class ItemKonungElixirOfWisdom extends Item
