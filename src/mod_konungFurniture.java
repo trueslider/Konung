@@ -31,12 +31,8 @@ public class mod_konungFurniture extends BaseMod
 	public static final Item itemWindow = (new ItemReed(6010, window)).setItemName("itemWindow");
 	public static final Item itemWoodIdol = (new ItemReed(6011, woodIdol)).setItemName("itemWoodIdol");
 	
-	public String getVersion()
-	{
-		return "1.3.1";
-	}
 	
-	public void load()
+	public mod_konungFurniture()
 	{	
 		//деревянный стол
 		RenderKonungWoodTable renderwoodtable = new RenderKonungWoodTable();
@@ -134,4 +130,7 @@ public class mod_konungFurniture extends BaseMod
 		itemWoodIdol.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconwoodidol.png");
 		ModLoader.addRecipe(new ItemStack(itemWoodIdol, 1), new Object[] { "#X#", "#X#", "#X#", Character.valueOf('X'), mod_konungLog.logVert});
 	}
+	
+	public void load(){};
+	public String getVersion(){return "1.3.1";}
 }
