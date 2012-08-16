@@ -5,8 +5,8 @@ import java.util.Random;
 public class mod_konungAlchemy extends BaseMod
 {
 
-	public static final Block KonungNut = new BlockKonungAlchemyNut(142, ModLoader.addOverride("/terrain.png", "/textures/konung/itemnut.png")).setStepSound(Block.soundGrassFootstep).setBlockName("Nut!");
-	public static final Block KonungWhiteRoot = new BlockKonungAlchemyWhiteRoot(143, ModLoader.addOverride("/terrain.png", "/textures/konung/itemroot.png")).setStepSound(Block.soundGrassFootstep).setBlockName("WhiteRoot!");
+	public static final Block KonungNut = new KonungBlockAlchemyNut(142, ModLoader.addOverride("/terrain.png", "/textures/konung/itemnut.png")).setStepSound(Block.soundGrassFootstep).setBlockName("Nut!");
+	public static final Block KonungWhiteRoot = new KonungBlockAlchemyWhiteRoot(143, ModLoader.addOverride("/terrain.png", "/textures/konung/itemroot.png")).setStepSound(Block.soundGrassFootstep).setBlockName("WhiteRoot!");
 	
 	public static final Item KonungHealingPotion02 = new ItemFood(4000, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.2F).setAlwaysEdible().setItemName("Heal1!");
 	public static final Item KonungHealingPotion04 = new ItemFood(4001, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.4F).setAlwaysEdible().setItemName("Heal2!");
@@ -38,11 +38,11 @@ public class mod_konungAlchemy extends BaseMod
 	public static final Item KonungPotionPotion08 = new ItemFood(4023, 0, 1F, false).setPotionEffect(Potion.jump.id, 360, 3, 0.8F).setPotionEffect(Potion.moveSpeed.id, 120, 1, 0.8F).setAlwaysEdible().setItemName("Potion4!");
 	public static final Item KonungPotionPotion10 = new ItemFood(4024, 0, 1F, false).setPotionEffect(Potion.jump.id, 360, 3, 1.0F).setPotionEffect(Potion.moveSpeed.id, 120, 1, 1.0F).setAlwaysEdible().setItemName("Potion5!");
 	
-	public static final Item KonungAntidotePotion02 = new ItemKonungAntidotePotion(4025).setItemName("Antidote1!");
-	public static final Item KonungAntidotePotion04 = new ItemKonungAntidotePotion(4026).setItemName("Antidote2!");
-	public static final Item KonungAntidotePotion06 = new ItemKonungAntidotePotion(4027).setItemName("Antidote3!");
-	public static final Item KonungAntidotePotion08 = new ItemKonungAntidotePotion(4028).setItemName("Antidote4!");
-	public static final Item KonungAntidotePotion10 = new ItemKonungAntidotePotion(4029).setItemName("Antidote5!");
+	public static final Item KonungAntidotePotion02 = new KonungItemAntidotePotion(4025).setItemName("Antidote1!");
+	public static final Item KonungAntidotePotion04 = new KonungItemAntidotePotion(4026).setItemName("Antidote2!");
+	public static final Item KonungAntidotePotion06 = new KonungItemAntidotePotion(4027).setItemName("Antidote3!");
+	public static final Item KonungAntidotePotion08 = new KonungItemAntidotePotion(4028).setItemName("Antidote4!");
+	public static final Item KonungAntidotePotion10 = new KonungItemAntidotePotion(4029).setItemName("Antidote5!");
 	
 	public static final Item KonungPureTearPotion02 = new ItemFood(4030, 0, 1F, false).setPotionEffect(Potion.digSpeed.id, 360, 10, 0.2F).setAlwaysEdible().setItemName("PureTear1!");
 	public static final Item KonungPureTearPotion04 = new ItemFood(4031, 0, 1F, false).setPotionEffect(Potion.digSpeed.id, 360, 10, 0.4F).setAlwaysEdible().setItemName("PureTear2!");
@@ -50,11 +50,11 @@ public class mod_konungAlchemy extends BaseMod
 	public static final Item KonungPureTearPotion08 = new ItemFood(4033, 0, 1F, false).setPotionEffect(Potion.digSpeed.id, 360, 10, 0.8F).setAlwaysEdible().setItemName("PureTear4!");
 	public static final Item KonungPureTearPotion10 = new ItemFood(4034, 0, 1F, false).setPotionEffect(Potion.digSpeed.id, 360, 10, 1.0F).setAlwaysEdible().setItemName("PureTear5!");
 	
-	public static final Item KonungElixirOfWisdomPotion02 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom1!");
-	public static final Item KonungElixirOfWisdomPotion04 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom2!");
-	public static final Item KonungElixirOfWisdomPotion06 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom3!");
-	public static final Item KonungElixirOfWisdomPotion08 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom4!");
-	public static final Item KonungElixirOfWisdomPotion10 = new ItemKonungElixirOfWisdom(4035).setItemName("ElixirOfWisdom5!");
+	public static final Item KonungElixirOfWisdomPotion02 = new KonungItemElixirOfWisdom(4035).setItemName("ElixirOfWisdom1!");
+	public static final Item KonungElixirOfWisdomPotion04 = new KonungItemElixirOfWisdom(4035).setItemName("ElixirOfWisdom2!");
+	public static final Item KonungElixirOfWisdomPotion06 = new KonungItemElixirOfWisdom(4035).setItemName("ElixirOfWisdom3!");
+	public static final Item KonungElixirOfWisdomPotion08 = new KonungItemElixirOfWisdom(4035).setItemName("ElixirOfWisdom4!");
+	public static final Item KonungElixirOfWisdomPotion10 = new KonungItemElixirOfWisdom(4035).setItemName("ElixirOfWisdom5!");
 	
 	public static final Item KonungLiveWaterPotion02 = new ItemFood(4040, 0, 1F, false).setPotionEffect(Potion.fireResistance.id, 60, 3, 0.2F).setAlwaysEdible().setItemName("LiveWater1!");
 	public static final Item KonungLiveWaterPotion04 = new ItemFood(4041, 0, 1F, false).setPotionEffect(Potion.fireResistance.id, 60, 3, 0.4F).setAlwaysEdible().setItemName("LiveWater2!");
@@ -789,8 +789,8 @@ public class mod_konungAlchemy extends BaseMod
              int Xcoord = chunkX + random.nextInt(16) + 8;
              int Ycoord = random.nextInt(8+100);
              int Zcoord = chunkZ + random.nextInt(16) + 8;
-			(new WorldGenKonungAlchemy(KonungNut.blockID)).generate(world, random, Xcoord, Ycoord, Zcoord);
-			(new WorldGenKonungAlchemy(KonungWhiteRoot.blockID)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			(new KonungWorldGenAlchemy(KonungNut.blockID)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			(new KonungWorldGenAlchemy(KonungWhiteRoot.blockID)).generate(world, random, Xcoord, Ycoord, Zcoord);
 		}
 	}
 	

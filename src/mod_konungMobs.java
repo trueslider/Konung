@@ -6,7 +6,7 @@ import java.util.Random;
 public class mod_konungMobs extends BaseMod
 {
 	
-	public static final Item KonungPoisonSting = new ItemKonungPoisonSting(4500).setItemName("Poison Sting!");
+	public static final Item KonungPoisonSting = new KonungItemPoisonSting(4500).setItemName("Poison Sting!");
 	
 	public mod_konungMobs()
 	{
@@ -16,13 +16,13 @@ public class mod_konungMobs extends BaseMod
 		
 		
 		//Poison Spider
-		ModLoader.registerEntityID(EntityKonungSpider.class, "Poison Spider", (byte)ModLoader.getUniqueEntityId());
-		ModLoader.addSpawn(EntityKonungSpider.class, 100, 10, 16, EnumCreatureType.monster);
+		ModLoader.registerEntityID(KonungEntitySpider.class, "Poison Spider", (byte)ModLoader.getUniqueEntityId());
+		ModLoader.addSpawn(KonungEntitySpider.class, 100, 10, 16, EnumCreatureType.monster);
 	}
 	
 	public void addRenderer(Map map)
 	{
-		map.put(EntityKonungSpider.class, new RenderSpider());
+		map.put(KonungEntitySpider.class, new RenderSpider());
 	}
 	
 	

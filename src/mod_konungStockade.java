@@ -155,12 +155,12 @@ public class mod_konungStockade extends BaseMod
 		BlockKaevWoodCorners.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_cut.png");
 		
 		//if(props.getInt("BlockKaevWoodCorners") != 0){
-			ModLoader.addRecipe(new ItemStack(BlockKaevWoodCorners, 4, BlockKonungStockade.func_21035_d(0)), new Object[] {
+			ModLoader.addRecipe(new ItemStack(BlockKaevWoodCorners, 4, KonungBlockStockade.func_21035_d(0)), new Object[] {
 				" # ", "###", Character.valueOf('#'), Block.wood
 			});
-			ModLoader.addRecipe(new ItemStack(BlockKaevWoodCorners, 4, BlockKonungStockade.func_21035_d(0)), new Object[] {
-				" # ", "###", Character.valueOf('#'), mod_konungLog.logVert
-			});
+		//	ModLoader.addRecipe(new ItemStack(BlockKaevWoodCorners, 4, KonungBlockStockade.func_21035_d(0)), new Object[] {
+		//		" # ", "###", Character.valueOf('#'), mod_konungLog.logVert
+		//	});
 		//}
 	}
 	
@@ -321,8 +321,8 @@ public class mod_konungStockade extends BaseMod
 		SlopesOpacity = props.getInt("Slopes_Opacity");
 		
 		if(props.getInt("BlockKaevWoodCorners") != 0){
-			BlockKaevWoodCorners = new BlockKonungStockade(props.getInt("BlockKaevWoodCorners"),4,Material.wood).setHardness(2.0F).setStepSound(Block.soundWoodFootstep).setResistance(5F).setBlockName("BlockKaevWoodCorners");
-			ItemKaevWoodCorners = new ItemKonungStockade(BlockKaevWoodCorners.blockID - 256, "Wood").setItemName("ItemKaevWoodCorners");
+			BlockKaevWoodCorners = new KonungBlockStockade(props.getInt("BlockKaevWoodCorners"),4,Material.wood).setHardness(2.0F).setStepSound(Block.soundWoodFootstep).setResistance(5F).setBlockName("BlockKaevWoodCorners");
+			ItemKaevWoodCorners = new KonungItemStockade(BlockKaevWoodCorners.blockID - 256, "Wood").setItemName("ItemKaevWoodCorners");
 		}else{
 			BlockKaevWoodCorners = Block.stone;
 		}
