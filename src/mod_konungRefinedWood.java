@@ -3,10 +3,7 @@ package net.minecraft.src;
 public class mod_konungRefinedWood extends BaseMod
 {
 
-	public static final Block oakRefinedWood = (new BlockLog(178)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("oakRefinedWood");
-	//public static final Block spruceStairs = (new BlockKonungStairs(171,0)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("pineStairs");
-	//public static final Block birchStairs = (new BlockKonungStairs(172,0)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("birchStairs");
-	//public static final Block jungleStairs = (new BlockKonungStairs(173,0)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("jungleStairs");
+	public static final Block refinedWood = (new KonungBlockRefinedWood(178)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("refinedWood");
 	
 	public static int topRefinedWoodTexture;
 	public static int oakRefinedWoodTexture;
@@ -17,34 +14,38 @@ public class mod_konungRefinedWood extends BaseMod
 	
 	public mod_konungRefinedWood()
 	{
-		ModLoader.registerBlock(oakRefinedWood);
-		//ModLoader.registerBlock(spruceStairs);
-		//ModLoader.registerBlock(birchStairs);
-		//ModLoader.registerBlock(jungleStairs);
+		ModLoader.registerBlock(refinedWood);
+		ModLoader.registerBlock(refinedWood, net.minecraft.src.KonungBlockRefinedWood.class);
 		
-		topRefinedWoodTexture 		= ModLoader.addOverride("/terrain.png", "/textures/konung/log_top.png");
-    	oakRefinedWoodTexture 		= ModLoader.addOverride("/terrain.png", "/textures/konung/log_x.png");
-    	spruceRefinedWoodTexture 	= ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_pine.png");
-    	birchRefinedWoodTexture 	= ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_birch.png");
-    	jungleRefinedWoodTexture 	= ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_jungle.png");
+		topRefinedWoodTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/topRefinedWood.png");
+    	oakRefinedWoodTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/oakRefinedWood.png");
+    	spruceRefinedWoodTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/spruceRefinedWood.png");
+    	birchRefinedWoodTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/birchRefinedWood.png");
+    	jungleRefinedWoodTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/jungleRefinedWood.png");
+    	
+    	ModLoader.addName(new ItemStack(refinedWood,1,0), "Refined Oak Wood");
+    	ModLoader.addName(new ItemStack(refinedWood,1,1), "Refined Spruce Wood");
+    	ModLoader.addName(new ItemStack(refinedWood,1,2), "Refined Birch Wood");
+    	ModLoader.addName(new ItemStack(refinedWood,1,3), "Refined Jungle Wood");
 		
-		ModLoader.addName(oakRefinedWood, "New Refined Wood");
-		//ModLoader.addName(spruceStairs, "Spruce Stairs");
-		//ModLoader.addName(birchStairs, "Birch Stairs");
-		//ModLoader.addName(jungleStairs, "Jungle Stairs");
+		//ModLoader.addName(refinedWood, "Refined Wood");
+		//ModLoader.addName(refinedWood, "ru_RU", "Очищенная дубовая древесина");
+		//ModLoader.addName(refinedWood, "Spruce Refined Wood");
+		//ModLoader.addName(refinedWood, "ru_RU", "Очищенная еловая древесина");
+		//ModLoader.addName(birchRefinedWood, "Birch Refined Wood");
+		//ModLoader.addName(birchRefinedWood, "ru_RU", "Очищенная березовая древесина");
+		//ModLoader.addName(jungleRefinedWood, "Jungle Refined Wood");
+		//ModLoader.addName(jungleRefinedWood, "ru_RU", "Очищенная древесина тропического дерева");
+			
+		ModLoader.addRecipe(new ItemStack(refinedWood, 3, 0), new Object[]{ "X","X","X",Character.valueOf('X'), new ItemStack(Block.wood, 1, 0)});
+		ModLoader.addRecipe(new ItemStack(refinedWood, 3, 1), new Object[]{ "X","X","X",Character.valueOf('X'), new ItemStack(Block.wood, 1, 1)});
+		ModLoader.addRecipe(new ItemStack(refinedWood, 3, 2), new Object[]{ "X","X","X",Character.valueOf('X'), new ItemStack(Block.wood, 1, 2)});
+		ModLoader.addRecipe(new ItemStack(refinedWood, 3, 3), new Object[]{ "X","X","X",Character.valueOf('X'), new ItemStack(Block.wood, 1, 3)});
 		
-		//oakRefinedWood.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/oakRefinedWood.png");
-		//spruceStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_pine_stair.png");
-		//birchStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_birch_stair.png");
-		//jungleStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_jungle_stair.png");
+		Item.itemsList[refinedWood.blockID] = (new ItemTree(refinedWood.blockID - 256, refinedWood)).setItemName("refinedWood");
 		
-		ModLoader.addRecipe(new ItemStack(oakRefinedWood, 3), new Object[]{ "X","X","X",Character.valueOf('X'), new ItemStack(Block.wood,3)});
-		//ModLoader.addRecipe(new ItemStack(spruceStairs, 3), new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.sprucePlanks,1)});
-		//ModLoader.addRecipe(new ItemStack(birchStairs, 3), new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.birchPlanks,1)});
-		//ModLoader.addRecipe(new ItemStack(jungleStairs, 3), new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.junglePlanks,1)});
 
-	}
-	
+}
 	
 	
 	
