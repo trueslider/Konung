@@ -7,7 +7,7 @@ public class KonungBlockRefinedWood extends Block
 {
     /** The type of tree this log came from. */
     public static final String[] woodType = new String[] {"oak", "spruce", "birch", "jungle"};
-
+    
     protected KonungBlockRefinedWood(int par1)
     {
         super(par1, Material.wood);
@@ -106,9 +106,15 @@ public class KonungBlockRefinedWood extends Block
      */
     public int getBlockTextureFromSideAndMetadata(int par1, int par2)
     {
+    	int top = mod_konungRefinedWood.topRefinedWoodTexture;
+    	int oak = mod_konungRefinedWood.oakRefinedWoodTexture;
+    	int spruce = mod_konungRefinedWood.spruceRefinedWoodTexture;
+    	int birch = mod_konungRefinedWood.birchRefinedWoodTexture;
+    	int jungle = mod_konungRefinedWood.jungleRefinedWoodTexture;
+    	
         int var3 = par2 & 12;
         int var4 = par2 & 3;
-        return var3 == 0 && (par1 == 1 || par1 == 0) ? 21 : (var3 == 4 && (par1 == 5 || par1 == 4) ? 21 : (var3 == 8 && (par1 == 2 || par1 == 3) ? 21 : (var4 == 1 ? 116 : (var4 == 2 ? 117 : (var4 == 3 ? 153 : 20)))));
+        return var3 == 0 && (par1 == 1 || par1 == 0) ? top : (var3 == 4 && (par1 == 5 || par1 == 4) ? top : (var3 == 8 && (par1 == 2 || par1 == 3) ? top : (var4 == 1 ? spruce : (var4 == 2 ? birch : (var4 == 3 ? jungle : oak)))));
     }
 
     /**
