@@ -24,13 +24,13 @@ public class mod_konungRefinedPlanks extends BaseMod
 		//birchPlanks.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/birchPlanks.png");
 		//junglePlanks.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/junglePlanks.png");
 		
-		ModLoader.addRecipe(new ItemStack(defPlanks, 1), new Object[]{ "X",Character.valueOf('X'), new ItemStack(mod_konungRefinedWood.defRefinedWood,1)});
+		//ModLoader.addRecipe(new ItemStack(defPlanks, 1), new Object[]{ "X",Character.valueOf('X'), new ItemStack(mod_konungRefinedWood.oakRefinedWood,1)});
 		//ModLoader.addRecipe(new ItemStack(pinePlanks, 1), new Object[]{ "X",Character.valueOf('X'), new ItemStack(mod_konungRefinedWood.defRefinedWood,1)});
 		//ModLoader.addRecipe(new ItemStack(birchPlanks, 1), new Object[]{ "X",Character.valueOf('X'), new ItemStack(mod_konungRefinedWood.defRefinedWood,1)});
 		//ModLoader.addRecipe(new ItemStack(junglePlanks, 1), new Object[]{ "X",Character.valueOf('X'), new ItemStack(mod_konungRefinedWood.defRefinedWood,1)});
 
 	   	//create planks from vertical clear wood
- 	   	ModLoader.addRecipe(new ItemStack(defPlanks, 1), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungRefinedWood.defRefinedWood,1,0)});
+ 	   	//ModLoader.addRecipe(new ItemStack(defPlanks, 1), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungRefinedWood.oakRefinedWood,1,0)});
 	   	//ModLoader.addRecipe(new ItemStack(pinePlanks, 1), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungRefinedWood.defRefinedWood,1,1)});
 	   	//ModLoader.addRecipe(new ItemStack(birchPlanks, 1), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungRefinedWood.defRefinedWood,1,2)});
 	   	//ModLoader.addRecipe(new ItemStack(junglePlanks, 1), new Object[]{ "#",  Character.valueOf('#'), new ItemStack(mod_konungRefinedWood.defRefinedWood,1,3)});
