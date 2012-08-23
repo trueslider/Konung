@@ -152,7 +152,7 @@ public class mod_konungStockade extends BaseMod
 		//ModLoader.addLocalization("KaevWoodSlopesTriCornerDown.name", "wooden slanted corner");
 		//ModLoader.addLocalization("KaevWoodSlopesTriCornerUp.name", "wooden slanted corner");
 		
-		BlockKaevWoodCorners.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_cut.png");
+		BlockKaevWoodCorners.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/Stockade.png");
 		
 		//if(props.getInt("BlockKaevWoodCorners") != 0){
 			ModLoader.addRecipe(new ItemStack(BlockKaevWoodCorners, 4, KonungBlockStockade.func_21035_d(0)), new Object[] {
