@@ -19,12 +19,12 @@ public class mod_konungRefinedStairs extends BaseMod
 		ModLoader.addName(birchStairs, "Birch Stairs");
 		ModLoader.addName(jungleStairs, "Jungle Stairs");
 		
-		defStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_stair.png");
-		pineStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_pine_stair.png");
-		birchStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_birch_stair.png");
-		jungleStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/log_x_jungle_stair.png");
+		//defStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/Planks_oak.png");
+		//pineStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/Planks_spruce.png");
+		//birchStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/Planks_birch.png");
+		//jungleStairs.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/textures/konung/Planks_jungle.png");
 		
-		ModLoader.addRecipe(new ItemStack(defStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungRefinedPlanks.defPlanks,1)});
+		ModLoader.addRecipe(new ItemStack(defStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungRefinedPlanks.refinedPlanks,1)});
 		//ModLoader.addRecipe(new ItemStack(pineStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.pinePlanks,1)});
 		//ModLoader.addRecipe(new ItemStack(birchStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.birchPlanks,1)});
 		//ModLoader.addRecipe(new ItemStack(jungleStairs, 3), new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(mod_konungPlanks.junglePlanks,1)});
