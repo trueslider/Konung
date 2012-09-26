@@ -21,7 +21,7 @@ public class KonungBlockRefinedStairs extends Block
         this.setHardness(par2Block.blockHardness);
         this.setResistance(par2Block.blockResistance / 3.0F);
         this.setStepSound(par2Block.stepSound);
-        this.setLightOpacity(255);
+        this.setLightOpacity(0);
         this.setCreativeTab(CreativeTabs.tabBlock);
     }
 
