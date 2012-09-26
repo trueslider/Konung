@@ -3,7 +3,7 @@ package net.minecraft.src;
 public class mod_konungRefinedPlanks extends BaseMod
 {
 	
-	public static final Block refinedPlanks = (new KonungBlockRefinedPlanks(179)).setHardness(2.0F).setResistance(5.0F).setStepSound(Block.soundWoodFootstep).setBlockName("refinedPlanks");
+	public static final Block refinedPlanks = (new KonungBlockRefinedPlanks(179)).setHardness(0.5F).setStepSound(Block.soundWoodFootstep).setBlockName("refinedPlanks");
 
 	public static int oakRefinedPlanksTexture;
 	public static int spruceRefinedPlanksTexture;
