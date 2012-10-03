@@ -34,7 +34,7 @@ public class mod_konungFurniture extends BaseMod
 	
 	public mod_konungFurniture()
 	{	
-		//деревянный стол
+		//РґРµСЂРµРІСЏРЅРЅС‹Р№ СЃС‚РѕР»
 		KonungRenderWoodTable renderwoodtable = new KonungRenderWoodTable();
 		KonungRenderWoodTablePine renderwoodtablepine = new KonungRenderWoodTablePine();
 		KonungRenderWoodTableBirch renderwoodtablebirch = new KonungRenderWoodTableBirch();
@@ -60,7 +60,7 @@ public class mod_konungFurniture extends BaseMod
 		ModLoader.addRecipe(new ItemStack(itemWoodTableBirch, 1), new Object[] { "XXX", "X#X","X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,2)});
 		ModLoader.addRecipe(new ItemStack(itemWoodTableJungle, 1), new Object[] { "XXX", "X#X","X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,3)});
 		
-		//Деревянная лавка
+		//Р”РµСЂРµРІСЏРЅРЅР°СЏ Р»Р°РІРєР°
 		KonungRenderWoodBench renderwoodbench = new KonungRenderWoodBench();
 		KonungRenderWoodBenchPine renderwoodbenchpine = new KonungRenderWoodBenchPine();
 		KonungRenderWoodBenchBirch renderwoodbenchbirch = new KonungRenderWoodBenchBirch();
@@ -86,28 +86,28 @@ public class mod_konungFurniture extends BaseMod
 		ModLoader.addRecipe(new ItemStack(itemWoodBenchBirch, 1), new Object[] { "###", "XXX", "X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,2)});
 		ModLoader.addRecipe(new ItemStack(itemWoodBenchJungle, 1), new Object[] { "###", "XXX", "X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,3)});
 		
-		//Деревянная бочка
+		//Р”РµСЂРµРІСЏРЅРЅР°СЏ Р±РѕС‡РєР°
 		KonungRenderWoodBarrel renderwoodbarrel = new KonungRenderWoodBarrel();
 		ModLoader.registerTileEntity(KonungTileEntityWoodBarrel.class, "WoodBarrelTileEntity", renderwoodbarrel);
 		ModLoader.addName(itemWoodBarrel, (new StringBuilder()).append("Wooden Barrel").toString());
 		itemWoodBarrel.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconbarrel.png");
 		ModLoader.addRecipe(new ItemStack(itemWoodBarrel, 1), new Object[] { "#X#", "X#X", "#X#", Character.valueOf('X'), Block.planks});
 		
-		//Распятье кожи
+		//Р Р°СЃРїСЏС‚СЊРµ РєРѕР¶Рё
 		KonungRenderLeatherBanner renderleatherbanner = new KonungRenderLeatherBanner();
 		ModLoader.registerTileEntity(KonungTileEntityLeatherBanner.class, "LeatherBannerTileEntity", renderleatherbanner);
 		ModLoader.addName(itemLeatherBanner, (new StringBuilder()).append("Crucified Leather").toString());
 		itemLeatherBanner.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconleatherbanner.png");
 		ModLoader.addRecipe(new ItemStack(itemLeatherBanner, 1), new Object[] { "#X#", "#Y#", "X#X", Character.valueOf('X'), new ItemStack(Item.stick,1),Character.valueOf('Y'), new ItemStack(Item.leather,1)});
 		
-		//Окно
+		//РћРєРЅРѕ
 		KonungRenderWindow renderwindow = new KonungRenderWindow();
 		ModLoader.registerTileEntity(KonungTileEntityWindow.class, "WindowTileEntity", renderwindow);
 		ModLoader.addName(itemWindow, (new StringBuilder()).append("Window").toString());
 		itemWindow.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconwindow.png");
 		ModLoader.addRecipe(new ItemStack(itemWindow, 1), new Object[] { "#X#", "XYX", "#X#", Character.valueOf('X'), Block.planks ,Character.valueOf('Y'), Block.thinGlass});
 		
-		//Блок сена
+		//Р‘Р»РѕРє СЃРµРЅР°
 		//ModLoader.registerBlock(hay);
 		//ModLoader.registerBlock(hayStairs);
 		//ModLoader.registerBlock(hayCornerStairs);
@@ -123,7 +123,7 @@ public class mod_konungFurniture extends BaseMod
 		//ModLoader.addRecipe(new ItemStack(hayStairs, 3), 	new Object[]{ "X##","XX#","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
 		//ModLoader.addRecipe(new ItemStack(hayCornerStairs, 3), 	new Object[]{ "X##","X##","XXX",Character.valueOf('X'), new ItemStack(Item.wheat,1)});
 		
-		//Деревянный идол
+		//Р”РµСЂРµРІСЏРЅРЅС‹Р№ РёРґРѕР»
 		KonungRenderWoodIdol renderwoodidol = new KonungRenderWoodIdol();
 		ModLoader.registerTileEntity(KonungTileEntityWoodIdol.class, "WoodIdolTileEntity", renderwoodidol);
 		ModLoader.addName(itemWoodIdol, (new StringBuilder()).append("Wooden Idol").toString());
