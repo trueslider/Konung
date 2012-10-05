@@ -2,7 +2,7 @@ package net.minecraft.src;
 
 public class KonungModelWindow extends ModelBase
 {
-  //fields
+  //Поля
     ModelRenderer plank1;
     ModelRenderer plank2;
     ModelRenderer plank3;
