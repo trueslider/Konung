@@ -12,7 +12,7 @@ public class mod_konungFurniture extends BaseMod
 	public static final Block woodBenchJungle = (new KonungBlockWoodBenchJungle(157, KonungTileEntityWoodBenchJungle.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodBenchJungle");
 	public static final Block woodBarrel = (new KonungBlockWoodBarrel(158, KonungTileEntityWoodBarrel.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodBarrel");
 	public static final Block leatherBanner = (new KonungBlockLeatherBanner(159, KonungTileEntityLeatherBanner.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("leatherBanner");
-	public static final Block window = (new KonungBlockWindow(160, KonungTileEntityWindow.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("window");
+	//public static final Block window = (new KonungBlockWindow(160, KonungTileEntityWindow.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("window");
 	//public static final Block hay = (new KonungBlockHay(161,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hay");
 	//public static final Block hayStairs = (new KonungBlockStairs(162,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayStairs");
 	//public static final Block hayCornerStairs = (new KonungBlockCornerStairs(163,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayCornerStairs");
@@ -28,7 +28,7 @@ public class mod_konungFurniture extends BaseMod
 	public static final Item itemWoodBenchJungle = (new ItemReed(6007, woodBenchJungle)).setItemName("itemWoodBenchJungle");
 	public static final Item itemWoodBarrel = (new ItemReed(6008, woodBarrel)).setItemName("itemWoodBarrel");
 	public static final Item itemLeatherBanner = (new ItemReed(6009, leatherBanner)).setItemName("itemLeathernBanner");
-	public static final Item itemWindow = (new ItemReed(6010, window)).setItemName("itemWindow");
+	//public static final Item itemWindow = (new ItemReed(6010, window)).setItemName("itemWindow");
 	public static final Item itemWoodIdol = (new ItemReed(6011, woodIdol)).setItemName("itemWoodIdol");
 	
 	
@@ -101,11 +101,11 @@ public class mod_konungFurniture extends BaseMod
 		ModLoader.addRecipe(new ItemStack(itemLeatherBanner, 1), new Object[] { "#X#", "#Y#", "X#X", Character.valueOf('X'), new ItemStack(Item.stick,1),Character.valueOf('Y'), new ItemStack(Item.leather,1)});
 		
 		//РћРєРЅРѕ
-		KonungRenderWindow renderwindow = new KonungRenderWindow();
-		ModLoader.registerTileEntity(KonungTileEntityWindow.class, "WindowTileEntity", renderwindow);
-		ModLoader.addName(itemWindow, (new StringBuilder()).append("Window").toString());
-		itemWindow.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconwindow.png");
-		ModLoader.addRecipe(new ItemStack(itemWindow, 1), new Object[] { "#X#", "XYX", "#X#", Character.valueOf('X'), Block.planks ,Character.valueOf('Y'), Block.thinGlass});
+		//KonungRenderWindow renderwindow = new KonungRenderWindow();
+		//ModLoader.registerTileEntity(KonungTileEntityWindow.class, "WindowTileEntity", renderwindow);
+		//ModLoader.addName(itemWindow, (new StringBuilder()).append("Window").toString());
+		//itemWindow.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/iconwindow.png");
+		//ModLoader.addRecipe(new ItemStack(itemWindow, 1), new Object[] { "#X#", "XYX", "#X#", Character.valueOf('X'), Block.planks ,Character.valueOf('Y'), Block.thinGlass});
 		
 		//Р‘Р»РѕРє СЃРµРЅР°
 		//ModLoader.registerBlock(hay);
