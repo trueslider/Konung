@@ -2,32 +2,40 @@ package net.minecraft.src;
 
 import org.lwjgl.opengl.GL11;
 
-public class KonungRenderWindow extends TileEntitySpecialRenderer {
+public class KonungRenderWindow extends TileEntitySpecialRenderer 
+{
 	private KonungModelWindow model;
 
-	public KonungRenderWindow() {
+	public KonungRenderWindow() 
+	{
 		model = new KonungModelWindow();
 	}
 
 	public void renderAModelAt(KonungTileEntityWindow tile, double d, double d1, double d2, float f)
 	{
-		int i = tile.getBlockMetadata(); //this is for rotation
+		int i = 0;
+
+		if(tile.worldObj != null) // Сообщаем миру, что блок создан.
+		{
+			i = (tile.worldObj.getBlockMetadata(tile.xCoord, tile.yCoord, tile.zCoord)); // Сообщает игре о необходимости получить метадату из блока
+		}
+
 		int j = 0;
 		if (i == 0)
 		{
-			j = 0;//поворот на 0 градусов если поставить впереди
+			j = 0;//Поворот на 0 градусов, если поставить впереди
 		}
 		if (i == 1)
 		{
-			j = 90;//поворот на 90 градусов если поставить слева
+			j = 90;//Поворот на 90 градусов, если поставить слева
 		}
 		if (i == 2)
 		{
-			j = 180;//поворот на 180 градусов если поставить сзади
+			j = 180;//Поворот на 180 градусов, если поставить сзади
 		}
 		if (i == 3)
 		{
-			j = 270;//поворот на 270 градусов если поставить справа
+			j = 270;//Поворот на 270 градусов, если поставить справа
 		}
 		bindTextureByName("/textures/konung/window.png");
 		GL11.glPushMatrix();
