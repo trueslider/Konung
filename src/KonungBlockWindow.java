@@ -1,6 +1,7 @@
 package net.minecraft.src;
 
 import java.util.Random;
+import java.util.List;
 
 public class KonungBlockWindow extends BlockContainer
 {
@@ -16,7 +17,7 @@ public class KonungBlockWindow extends BlockContainer
         {
         	return new KonungTileEntityWindow();
         }
-
+        
         public int idDropped(int i, Random random, int j)
         {
                 return mod_konungDecorations.itemWindow.shiftedIndex;
@@ -32,7 +33,7 @@ public class KonungBlockWindow extends BlockContainer
          */
         public int getRenderType()
         {
-                return mod_konungDecorations.modelID;
+                return mod_konungDecorations.modelWindowID;
         }
 
         public boolean isOpaqueCube()
@@ -76,7 +77,8 @@ public class KonungBlockWindow extends BlockContainer
                                 
         }
 
-	public TileEntity createNewTileEntity(World var1) {
+	public TileEntity createNewTileEntity(World var1) 
+	{
 
 		return new KonungTileEntityWindow();
 	}
