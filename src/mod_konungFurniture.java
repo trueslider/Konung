@@ -2,10 +2,10 @@ package net.minecraft.src;
 
 public class mod_konungFurniture extends BaseMod
 	{
-	public static final Block woodTable = (new KonungBlockWoodTable(150, KonungTileEntityWoodTable.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTable");
-	public static final Block woodTablePine = (new KonungBlockWoodTablePine(151, KonungTileEntityWoodTablePine.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTablePine");
-	public static final Block woodTableBirch = (new KonungBlockWoodTableBirch(152, KonungTileEntityWoodTableBirch.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTableBirch");
-	public static final Block woodTableJungle = (new KonungBlockWoodTableJungle(153, KonungTileEntityWoodTableJungle.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTableJungle");
+	//public static final Block woodTable = (new KonungBlockWoodTable(150, KonungTileEntityWoodTable.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTable");
+	//public static final Block woodTablePine = (new KonungBlockWoodTablePine(151, KonungTileEntityWoodTablePine.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTablePine");
+	//public static final Block woodTableBirch = (new KonungBlockWoodTableBirch(152, KonungTileEntityWoodTableBirch.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTableBirch");
+	//public static final Block woodTableJungle = (new KonungBlockWoodTableJungle(153, KonungTileEntityWoodTableJungle.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodTableJungle");
 	public static final Block woodBench = (new KonungBlockWoodBench(154, KonungTileEntityWoodBench.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodBench");
 	public static final Block woodBenchPine = (new KonungBlockWoodBenchPine(155, KonungTileEntityWoodBenchPine.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodBenchPine");
 	public static final Block woodBenchBirch = (new KonungBlockWoodBenchBirch(156, KonungTileEntityWoodBenchBirch.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodBenchBirch");
@@ -18,10 +18,10 @@ public class mod_konungFurniture extends BaseMod
 	//public static final Block hayCornerStairs = (new KonungBlockCornerStairs(163,0)).setHardness(0.5F).setStepSound(Block.soundGrassFootstep).setBlockName("hayCornerStairs");
 	public static final Block woodIdol = (new KonungBlockWoodIdol(164, KonungTileEntityWoodIdol.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("woodIdol");
 	
-	public static final Item itemWoodTable = (new ItemReed(6000, woodTable)).setItemName("itemWoodTable");
-	public static final Item itemWoodTablePine = (new ItemReed(6001, woodTablePine)).setItemName("itemWoodTablePine");
-	public static final Item itemWoodTableBirch = (new ItemReed(6002, woodTableBirch)).setItemName("itemWoodTableBirch");
-	public static final Item itemWoodTableJungle = (new ItemReed(6003, woodTableJungle)).setItemName("itemWoodTableJungle");
+	//public static final Item itemWoodTable = (new ItemReed(6000, woodTable)).setItemName("itemWoodTable");
+	//public static final Item itemWoodTablePine = (new ItemReed(6001, woodTablePine)).setItemName("itemWoodTablePine");
+	//public static final Item itemWoodTableBirch = (new ItemReed(6002, woodTableBirch)).setItemName("itemWoodTableBirch");
+	//public static final Item itemWoodTableJungle = (new ItemReed(6003, woodTableJungle)).setItemName("itemWoodTableJungle");
 	public static final Item itemWoodBench = (new ItemReed(6004, woodBench)).setItemName("itemWoodBench");
 	public static final Item itemWoodBenchPine = (new ItemReed(6005, woodBenchPine)).setItemName("itemWoodBenchPine");
 	public static final Item itemWoodBenchBirch = (new ItemReed(6006, woodBenchBirch)).setItemName("itemWoodBenchBirch");
@@ -35,30 +35,30 @@ public class mod_konungFurniture extends BaseMod
 	public mod_konungFurniture()
 	{	
 		//РґРµСЂРµРІСЏРЅРЅС‹Р№ СЃС‚РѕР»
-		KonungRenderWoodTable renderwoodtable = new KonungRenderWoodTable();
-		KonungRenderWoodTablePine renderwoodtablepine = new KonungRenderWoodTablePine();
-		KonungRenderWoodTableBirch renderwoodtablebirch = new KonungRenderWoodTableBirch();
-		KonungRenderWoodTableJungle renderwoodtablejungle = new KonungRenderWoodTableJungle();
+		//KonungRenderWoodTable renderwoodtable = new KonungRenderWoodTable();
+		//KonungRenderWoodTablePine renderwoodtablepine = new KonungRenderWoodTablePine();
+		//KonungRenderWoodTableBirch renderwoodtablebirch = new KonungRenderWoodTableBirch();
+		//KonungRenderWoodTableJungle renderwoodtablejungle = new KonungRenderWoodTableJungle();
 		
-		ModLoader.registerTileEntity(KonungTileEntityWoodTable.class, "WoodTableTileEntity", renderwoodtable);
-		ModLoader.registerTileEntity(KonungTileEntityWoodTablePine.class, "WoodTablePineTileEntity", renderwoodtablepine);
-		ModLoader.registerTileEntity(KonungTileEntityWoodTableBirch.class, "WoodTableBirchTileEntity", renderwoodtablebirch);
-		ModLoader.registerTileEntity(KonungTileEntityWoodTableJungle.class, "WoodTableJungleTileEntity", renderwoodtablejungle);
+		//ModLoader.registerTileEntity(KonungTileEntityWoodTable.class, "WoodTableTileEntity", renderwoodtable);
+		//ModLoader.registerTileEntity(KonungTileEntityWoodTablePine.class, "WoodTablePineTileEntity", renderwoodtablepine);
+		//ModLoader.registerTileEntity(KonungTileEntityWoodTableBirch.class, "WoodTableBirchTileEntity", renderwoodtablebirch);
+		//ModLoader.registerTileEntity(KonungTileEntityWoodTableJungle.class, "WoodTableJungleTileEntity", renderwoodtablejungle);
 		
-		ModLoader.addName(itemWoodTable, (new StringBuilder()).append("Wooden Table").toString());
-		ModLoader.addName(itemWoodTablePine, (new StringBuilder()).append("Wooden Table").toString());
-		ModLoader.addName(itemWoodTableBirch, (new StringBuilder()).append("Wooden Table").toString());
-		ModLoader.addName(itemWoodTableJungle, (new StringBuilder()).append("Wooden Table").toString());
+		//ModLoader.addName(itemWoodTable, (new StringBuilder()).append("Wooden Table").toString());
+		//ModLoader.addName(itemWoodTablePine, (new StringBuilder()).append("Wooden Table").toString());
+		//ModLoader.addName(itemWoodTableBirch, (new StringBuilder()).append("Wooden Table").toString());
+		//ModLoader.addName(itemWoodTableJungle, (new StringBuilder()).append("Wooden Table").toString());
 		
-		itemWoodTable.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontable.png");
-		itemWoodTablePine.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontablepine.png");
-		itemWoodTableBirch.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontablebirch.png");
-		itemWoodTableJungle.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontablejungle.png");
+		//itemWoodTable.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontable.png");
+		//itemWoodTablePine.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontablepine.png");
+		//itemWoodTableBirch.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontablebirch.png");
+		//itemWoodTableJungle.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/icon/icontablejungle.png");
 		
-		ModLoader.addRecipe(new ItemStack(itemWoodTable, 1), new Object[] { "XXX", "X#X", "X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,0)});
-		ModLoader.addRecipe(new ItemStack(itemWoodTablePine, 1), new Object[] { "XXX", "X#X","X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,1)});
-		ModLoader.addRecipe(new ItemStack(itemWoodTableBirch, 1), new Object[] { "XXX", "X#X","X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,2)});
-		ModLoader.addRecipe(new ItemStack(itemWoodTableJungle, 1), new Object[] { "XXX", "X#X","X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,3)});
+		//ModLoader.addRecipe(new ItemStack(itemWoodTable, 1), new Object[] { "XXX", "X#X", "X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,0)});
+		//ModLoader.addRecipe(new ItemStack(itemWoodTablePine, 1), new Object[] { "XXX", "X#X","X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,1)});
+		//ModLoader.addRecipe(new ItemStack(itemWoodTableBirch, 1), new Object[] { "XXX", "X#X","X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,2)});
+		//ModLoader.addRecipe(new ItemStack(itemWoodTableJungle, 1), new Object[] { "XXX", "X#X","X#X", Character.valueOf('X'), new ItemStack(Block.planks,1,3)});
 		
 		//Р”РµСЂРµРІСЏРЅРЅР°СЏ Р»Р°РІРєР°
 		KonungRenderWoodBench renderwoodbench = new KonungRenderWoodBench();
