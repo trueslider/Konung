@@ -6,7 +6,6 @@ import java.util.*;
 public class KonungBlockBarrel extends BlockContainer
 {		
 		private Random random;
-        private Class WoodEntityClass;
         
         public KonungBlockBarrel(int par1, int par2, Class class1)
         {
@@ -14,7 +13,6 @@ public class KonungBlockBarrel extends BlockContainer
             	this.setCreativeTab(CreativeTabs.tabBlock);
             	this.setRequiresSelfNotify();
                 random = new Random();
-                WoodEntityClass = class1;
         }
         
         /**
@@ -41,7 +39,10 @@ public class KonungBlockBarrel extends BlockContainer
         {
             return mod_konungDecorations.modelBarrelID;
         }
-        //дроп бочки
+        
+        /** 
+         * Дроп бочки
+         */
         public int idDropped(int i, Random random, int j)
         {
                 return mod_konungDecorations.itemBarrel.shiftedIndex;
@@ -54,75 +55,74 @@ public class KonungBlockBarrel extends BlockContainer
          */
         public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLiving par5EntityLiving)
         {
-            int i = par1World.getBlockId(par2, par3, par4 - 1);
-            int j = par1World.getBlockId(par2, par3, par4 + 1);
-            int k = par1World.getBlockId(par2 - 1, par3, par4);
-            int l = par1World.getBlockId(par2 + 1, par3, par4);
-            byte byte0 = 0;
-            int i1 = MathHelper.floor_double((double)((par5EntityLiving.rotationYaw * 4F) / 360F) + 0.5D) & 3;
+            int var6 = par1World.getBlockId(par2, par3, par4 - 1);
+            int var7 = par1World.getBlockId(par2, par3, par4 + 1);
+            int var8 = par1World.getBlockId(par2 - 1, par3, par4);
+            int var9 = par1World.getBlockId(par2 + 1, par3, par4);
+            byte var10 = 0;
+            int var11 = MathHelper.floor_double((double)(par5EntityLiving.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
 
-            if (i1 == 0)
+            if (var11 == 0)
             {
-                byte0 = 2;
+                var10 = 2;
             }
 
-            if (i1 == 1)
+            if (var11 == 1)
             {
-                byte0 = 5;
+                var10 = 5;
             }
 
-            if (i1 == 2)
+            if (var11 == 2)
             {
-                byte0 = 3;
+                var10 = 3;
             }
 
-            if (i1 == 3)
+            if (var11 == 3)
             {
-                byte0 = 4;
+                var10 = 4;
             }
-            
-            if (i != blockID && j != blockID && k != blockID && l != blockID)
+
+            if (var6 != this.blockID && var7 != this.blockID && var8 != this.blockID && var9 != this.blockID)
             {
-                par1World.setBlockMetadataWithNotify(par2, par3, par4, byte0);
+                par1World.setBlockMetadataWithNotify(par2, par3, par4, var10);
             }
             else
             {
-                if ((i == blockID || j == blockID) && (byte0 == 4 || byte0 == 5))
+                if ((var6 == this.blockID || var7 == this.blockID) && (var10 == 4 || var10 == 5))
                 {
-                    if (i == blockID)
+                    if (var6 == this.blockID)
                     {
-                        par1World.setBlockMetadataWithNotify(par2, par3, par4 - 1, byte0);
+                        par1World.setBlockMetadataWithNotify(par2, par3, par4 - 1, var10);
                     }
                     else
                     {
-                        par1World.setBlockMetadataWithNotify(par2, par3, par4 + 1, byte0);
+                        par1World.setBlockMetadataWithNotify(par2, par3, par4 + 1, var10);
                     }
 
-                    par1World.setBlockMetadataWithNotify(par2, par3, par4, byte0);
+                    par1World.setBlockMetadataWithNotify(par2, par3, par4, var10);
                 }
 
-                if ((k == blockID || l == blockID) && (byte0 == 2 || byte0 == 3))
+                if ((var8 == this.blockID || var9 == this.blockID) && (var10 == 2 || var10 == 3))
                 {
-                    if (k == blockID)
+                    if (var8 == this.blockID)
                     {
-                        par1World.setBlockMetadataWithNotify(par2 - 1, par3, par4, byte0);
+                        par1World.setBlockMetadataWithNotify(par2 - 1, par3, par4, var10);
                     }
                     else
                     {
-                        par1World.setBlockMetadataWithNotify(par2 + 1, par3, par4, byte0);
+                        par1World.setBlockMetadataWithNotify(par2 + 1, par3, par4, var10);
                     }
 
-                    par1World.setBlockMetadataWithNotify(par2, par3, par4, byte0);
+                    par1World.setBlockMetadataWithNotify(par2, par3, par4, var10);
                 }
             }
         }
-
-        /**
+        /**
          * ejects contained items into the world, and notifies neighbours of an update, as appropriate
          */
         public void breakBlock(World par1World, int par2, int par3, int par4, int par5, int par6)
         {
-        	KonungTileEntityBarrel var7 = (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2, par3, par4);
+            KonungTileEntityBarrel var7 = (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2, par3, par4);
 
             if (var7 != null)
             {
@@ -163,59 +163,105 @@ public class KonungBlockBarrel extends BlockContainer
 
             super.breakBlock(par1World, par2, par3, par4, par5, par6);
         }
-
-        /**
-         * Called upon block activation (left or right click on the block.). The three integers represent x,y,z of the
-         * block.
+        /**
+         * Called upon block activation (right click on the block.)
          */
-        public boolean blockActivated(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer)
+        public boolean onBlockActivated(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer, int par6, float par7, float par8, float par9)
         {
-            Object obj = (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2, par3, par4);
+            Object var10 = (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2, par3, par4);
 
-            if (obj == null)
+            if (var10 == null)
             {
                 return true;
             }
-
-            if (par1World.isBlockNormalCube(par2, par3 + 1, par4))
+            else if (par1World.isBlockNormalCube(par2, par3 + 1, par4))
             {
                 return true;
             }
-
-            if (func_50075_j(par1World, par2, par3, par4))
+            else if (isOcelotBlockingChest(par1World, par2, par3, par4))
             {
                 return true;
             }
-
-            if (par1World.getBlockId(par2 - 1, par3, par4) == blockID && (par1World.isBlockNormalCube(par2 - 1, par3 + 1, par4) || func_50075_j(par1World, par2 - 1, par3, par4)))
+            else if (par1World.getBlockId(par2 - 1, par3, par4) == this.blockID && (par1World.isBlockNormalCube(par2 - 1, par3 + 1, par4) || isOcelotBlockingChest(par1World, par2 - 1, par3, par4)))
             {
                 return true;
             }
-
-            if (par1World.getBlockId(par2 + 1, par3, par4) == blockID && (par1World.isBlockNormalCube(par2 + 1, par3 + 1, par4) || func_50075_j(par1World, par2 + 1, par3, par4)))
+            else if (par1World.getBlockId(par2 + 1, par3, par4) == this.blockID && (par1World.isBlockNormalCube(par2 + 1, par3 + 1, par4) || isOcelotBlockingChest(par1World, par2 + 1, par3, par4)))
             {
                 return true;
             }
-
-            if (par1World.getBlockId(par2, par3, par4 - 1) == blockID && (par1World.isBlockNormalCube(par2, par3 + 1, par4 - 1) || func_50075_j(par1World, par2, par3, par4 - 1)))
+            else if (par1World.getBlockId(par2, par3, par4 - 1) == this.blockID && (par1World.isBlockNormalCube(par2, par3 + 1, par4 - 1) || isOcelotBlockingChest(par1World, par2, par3, par4 - 1)))
             {
                 return true;
             }
-
-            if (par1World.getBlockId(par2, par3, par4 + 1) == blockID && (par1World.isBlockNormalCube(par2, par3 + 1, par4 + 1) || func_50075_j(par1World, par2, par3, par4 + 1)))
-            {
-                return true;
-            }
-
-            if (par1World.isRemote)
+            else if (par1World.getBlockId(par2, par3, par4 + 1) == this.blockID && (par1World.isBlockNormalCube(par2, par3 + 1, par4 + 1) || isOcelotBlockingChest(par1World, par2, par3, par4 + 1)))
             {
                 return true;
             }
             else
             {
-                par5EntityPlayer.displayGUIChest(((IInventory)(obj)));
-                return true;
+                if (par1World.getBlockId(par2 - 1, par3, par4) == this.blockID)
+                {
+                    var10 = new InventoryLargeChest("container.chestDouble", (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2 - 1, par3, par4), (IInventory)var10);
+                }
+
+                if (par1World.getBlockId(par2 + 1, par3, par4) == this.blockID)
+                {
+                    var10 = new InventoryLargeChest("container.chestDouble", (IInventory)var10, (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2 + 1, par3, par4));
+                }
+
+                if (par1World.getBlockId(par2, par3, par4 - 1) == this.blockID)
+                {
+                    var10 = new InventoryLargeChest("container.chestDouble", (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2, par3, par4 - 1), (IInventory)var10);
+                }
+
+                if (par1World.getBlockId(par2, par3, par4 + 1) == this.blockID)
+                {
+                    var10 = new InventoryLargeChest("container.chestDouble", (IInventory)var10, (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2, par3, par4 + 1));
+                }
+
+                if (par1World.isRemote)
+                {
+                    return true;
+                }
+                else
+                {
+                    par5EntityPlayer.displayGUIChest((IInventory)var10);
+                    return true;
+                }
             }
+        }
+        
+        /**
+         * each class overrdies this to return a new <className>
+         */
+        public TileEntity createNewTileEntity(World par1World)
+        {
+            return new KonungTileEntityBarrel();
+        }
+        
+        /**
+         * Looks for a sitting ocelot within certain bounds. Such an ocelot is considered to be blocking access to the
+         * chest.
+         */
+        private static boolean isOcelotBlockingChest(World par0World, int par1, int par2, int par3)
+        {
+            Iterator var4 = par0World.getEntitiesWithinAABB(EntityOcelot.class, AxisAlignedBB.getAABBPool().addOrModifyAABBInPool((double)par1, (double)(par2 + 1), (double)par3, (double)(par1 + 1), (double)(par2 + 2), (double)(par3 + 1))).iterator();
+            EntityOcelot var6;
+
+            do
+            {
+                if (!var4.hasNext())
+                {
+                    return false;
+                }
+
+                EntityOcelot var5 = (EntityOcelot)var4.next();
+                var6 = (EntityOcelot)var5;
+            }
+            while (!var6.isSitting());
+
+            return true;
         }
 
         /**
@@ -242,74 +288,4 @@ public class KonungBlockBarrel extends BlockContainer
             return false;
         }
 
-		@Override
-		public TileEntity createNewTileEntity(World var1) {
-
-			return new KonungTileEntityBarrel();
-		}
-        
-        
-       /* //Указывает TileEntity для блока
-        public TileEntity getBlockEntity()
-        {
-                try
-                {
-                        return (TileEntity)BenchEntityClass.newInstance();
-                }
-                catch (Exception exception)
-                {
-                        throw new RuntimeException(exception);
-                }
-        }
-        //Что дропается
-        public int idDropped(int i, Random random, int j)
-        {
-                return mod_konungFurniture.itemWoodBarrel.shiftedIndex;
-        }
-        //Количество дропа
-        public int quantityDropped(Random random)
-        {
-                return 1;
-        }
-        //Тип рендера для блока
-        public int getRenderType()
-        {
-                return -1;
-        }
-        //False значит что блок не прозрачный
-        public boolean isOpaqueCube()
-        {
-                return false;
-        }
-        //False значит что блок не обычный пример таблички, ступеньки и т.д
-        public boolean renderAsNormalBlock()
-        {
-                return false;
-        }
-        
-       public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLiving par5EntityLiving)
-        {
-                int p = MathHelper.floor_double((double)((par5EntityLiving.rotationYaw * 4F) / 360F) + 0.5D) & 3; //поворот в сторону игрока
-                byte byte0 = 3;
-                
-                
-                                if (p == 0)
-                                {
-                                                byte0 = 4;
-                                }
-                                if (p == 1)
-                                {
-                                                byte0 = 3;
-                                }
-                                if (p == 2)
-                                {
-                                                byte0 = 2;
-                                }
-                                if (p == 3)
-                                {
-                                                byte0 = 1;
-                                }
-                                par1World.setBlockMetadataWithNotify(par2, par3, par4, byte0);
-        }*/
-       
 }
