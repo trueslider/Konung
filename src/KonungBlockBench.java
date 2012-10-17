@@ -12,6 +12,25 @@ public class KonungBlockBench extends BlockContainer
         	this.setCreativeTab(CreativeTabs.tabBlock);
         	this.setRequiresSelfNotify();
         }
+        
+        /**
+         * Updates the blocks bounds based on its current state. Args: world, x, y, z
+         */
+        public void setBlockBoundsBasedOnState(IBlockAccess par1IBlockAccess, int par2, int par3, int par4)
+        {
+            {
+                boolean var5 = (par1IBlockAccess.getBlockMetadata(par2, par3, par4) & 8) != 0;
+
+                if (var5)
+                {
+                    this.setBlockBounds(0.0F, 0.5F, 0.0F, 1.0F, 1.0F, 1.0F);
+                }
+                else
+                {
+                    this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
+                }
+            }
+        }
 
         public TileEntity getBlockEntity()
         {
