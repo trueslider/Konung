@@ -796,5 +796,5 @@ public class mod_konungAlchemy extends BaseMod
 	
 	
 	public void load(){};
-	public String getVersion(){return "1.3.1";}
+	public String getVersion(){return "1.3.2";}
 }
