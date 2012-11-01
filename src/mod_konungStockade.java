@@ -321,8 +321,8 @@ public class mod_konungStockade extends BaseMod
 		SlopesOpacity = props.getInt("Slopes_Opacity");
 		
 		if(props.getInt("BlockKaevWoodCorners") != 0){
-			BlockKaevWoodCorners = new KonungBlockStockade(props.getInt("BlockKaevWoodCorners"),4,Material.wood).setHardness(2.0F).setStepSound(Block.soundWoodFootstep).setResistance(5F).setBlockName("BlockKaevWoodCorners");
-			ItemKaevWoodCorners = new KonungItemStockade(BlockKaevWoodCorners.blockID - 256, "Wood").setItemName("ItemKaevWoodCorners");
+			BlockKaevWoodCorners = new KonungBlockStockade(props.getInt("BlockKaevWoodCorners"),4,Material.wood).setHardness(2.0F).setStepSound(Block.soundWoodFootstep).setResistance(5F).setBlockName("BlockKaevWoodCorners").setCreativeTab(CreativeTabs.tabBlock);
+			ItemKaevWoodCorners = new KonungItemStockade(BlockKaevWoodCorners.blockID - 256, "Wood").setItemName("ItemKaevWoodCorners").setTabToDisplayOn(CreativeTabs.tabBlock);
 		}else{
 			BlockKaevWoodCorners = Block.stone;
 		}
@@ -1214,5 +1214,5 @@ public class mod_konungStockade extends BaseMod
 
 
 	public void load(){};
-	public String getVersion(){return "1.3.1";}
+	public String getVersion(){return "1.3.2";}
 }
