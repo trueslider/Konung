@@ -200,26 +200,6 @@ public class KonungBlockBarrel extends BlockContainer
             }
             else
             {
-                if (par1World.getBlockId(par2 - 1, par3, par4) == this.blockID)
-                {
-                    var10 = new InventoryLargeChest("container.chestDouble", (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2 - 1, par3, par4), (IInventory)var10);
-                }
-
-                if (par1World.getBlockId(par2 + 1, par3, par4) == this.blockID)
-                {
-                    var10 = new InventoryLargeChest("container.chestDouble", (IInventory)var10, (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2 + 1, par3, par4));
-                }
-
-                if (par1World.getBlockId(par2, par3, par4 - 1) == this.blockID)
-                {
-                    var10 = new InventoryLargeChest("container.chestDouble", (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2, par3, par4 - 1), (IInventory)var10);
-                }
-
-                if (par1World.getBlockId(par2, par3, par4 + 1) == this.blockID)
-                {
-                    var10 = new InventoryLargeChest("container.chestDouble", (IInventory)var10, (KonungTileEntityBarrel)par1World.getBlockTileEntity(par2, par3, par4 + 1));
-                }
-
                 if (par1World.isRemote)
                 {
                     return true;
