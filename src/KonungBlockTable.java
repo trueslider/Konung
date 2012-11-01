@@ -5,12 +5,16 @@ import java.util.List;
 
 public class KonungBlockTable extends BlockContainer
 {
+	
+    /** True if this is an active furnace, false if idle */
+    private final boolean isActive;
 
-        public KonungBlockTable(int par1, int par2, Class class1)
+        public KonungBlockTable(int par1, int par2, Class class1, boolean par3)
         {
         	super(par1, par2, Material.wood);
         	this.setCreativeTab(CreativeTabs.tabBlock);
         	this.setRequiresSelfNotify();
+            this.isActive = par3;
         }
 
         public TileEntity getBlockEntity()
