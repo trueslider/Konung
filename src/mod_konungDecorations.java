@@ -26,7 +26,7 @@ public class mod_konungDecorations extends BaseMod
 	 * Создаем блок.
 	 */
 	public static final Block blockWindow = (new KonungBlockWindow(blockWindowID, 0, KonungTileEntityWindow.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("Window").setCreativeTab(CreativeTabs.tabBlock);
-	public static final Block blockTable = (new KonungBlockTable(blockTableID, 0, KonungTileEntityTable.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("Table").setCreativeTab(CreativeTabs.tabBlock);
+	public static final Block blockTable = (new KonungBlockTable(blockTableID, 0, KonungTileEntityTable.class, true)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("Table").setCreativeTab(CreativeTabs.tabBlock);
 	public static final Block blockBench = (new KonungBlockBench(blockBenchID, 0, KonungTileEntityBench.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("Bench").setCreativeTab(CreativeTabs.tabBlock);
 	public static final Block blockBarrel = (new KonungBlockBarrel(blockBarrelID, 0, KonungTileEntityBarrel.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("Barrel").setCreativeTab(CreativeTabs.tabBlock);
 	public static final Block blockLeather = (new KonungBlockLeather(blockLeatherID, 0, KonungTileEntityLeather.class)).setHardness(2.0F).setResistance(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("Leather").setCreativeTab(CreativeTabs.tabBlock);
@@ -62,7 +62,6 @@ public class mod_konungDecorations extends BaseMod
 		ModLoader.addName(new ItemStack(blockLeather, 1, 0), "ru_RU", "Шкура");
 		ModLoader.addName(new ItemStack(blockIdol, 1, 0), "Idol");
 		ModLoader.addName(new ItemStack(blockIdol, 1, 0), "ru_RU", "Идол");
-
 		
 		/*
 		 * Регистрируем TileEntity.
