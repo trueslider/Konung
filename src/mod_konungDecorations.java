@@ -60,8 +60,8 @@ public class mod_konungDecorations extends BaseMod
 		ModLoader.addName(new ItemStack(blockBarrel, 1, 0), "ru_RU", "Дубовая бочка");
 		ModLoader.addName(new ItemStack(blockLeather, 1, 0), "Leather");
 		ModLoader.addName(new ItemStack(blockLeather, 1, 0), "ru_RU", "Шкура");
-		ModLoader.addName(new ItemStack(blockIdol, 1, 0), "Idol");
-		ModLoader.addName(new ItemStack(blockIdol, 1, 0), "ru_RU", "Идол");
+		ModLoader.addName(new ItemStack(blockIdol, 1, 0), "Perun");
+		ModLoader.addName(new ItemStack(blockIdol, 1, 0), "ru_RU", "Перун");
 		
 		/*
 		 * Регистрируем TileEntity.
