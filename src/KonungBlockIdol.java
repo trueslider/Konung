@@ -21,7 +21,7 @@ public class KonungBlockIdol extends BlockContainer
         
         public int idDropped(int i, Random random, int j)
         {
-                return mod_konungDecorations.itemIdol.shiftedIndex;
+                return mod_konungDecorations.itemIdol.iconIndex;
         }
 
         public int quantityDropped(Random random)
@@ -47,7 +47,7 @@ public class KonungBlockIdol extends BlockContainer
                 return false;
         }
         
-        protected int damageDropped(int par1)
+        public int damageDropped(int par1)
         {
         	return par1;
         }
@@ -104,7 +104,7 @@ public class KonungBlockIdol extends BlockContainer
        {
            if (par5Random.nextInt(100) == 0)
            {
-               par1World.playSound((double)par2 + 0.5D, (double)par3 + 0.5D, (double)par4 + 0.5D, "portal.portal", 0.5F, par5Random.nextFloat() * 0.4F + 0.8F);
+        	   par1World.playSound((double)par2 + 0.5D, (double)par3 + 0.5D, (double)par4 + 0.5D, "portal.portal", 0.5F, par5Random.nextFloat() * 0.4F + 0.8F, false);
            }
 
            for (int var6 = 0; var6 < 4; ++var6)
