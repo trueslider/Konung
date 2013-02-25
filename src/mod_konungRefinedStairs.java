@@ -44,6 +44,6 @@ public class mod_konungRefinedStairs extends BaseMod
 	
 	
 	public void load(){};
-	public String getVersion(){return "1.3.2";}
+	public String getVersion(){return "1.4.7";}
 	
 }
