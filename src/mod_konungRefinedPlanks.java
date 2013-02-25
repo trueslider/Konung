@@ -29,11 +29,11 @@ public class mod_konungRefinedPlanks extends BaseMod
 		ModLoader.addRecipe(new ItemStack(refinedPlanks, 4, 2), new Object[]{ "X",Character.valueOf('X'), new ItemStack(mod_konungRefinedWood.refinedWood, 1, 2)});
 		ModLoader.addRecipe(new ItemStack(refinedPlanks, 4, 3), new Object[]{ "X",Character.valueOf('X'), new ItemStack(mod_konungRefinedWood.refinedWood, 1, 3)});
 
-		Item.itemsList[refinedPlanks.blockID] = (new ItemTree(refinedPlanks.blockID - 256, refinedPlanks)).setItemName("refinedPlanks");
+		//Item.itemsList[refinedPlanks.blockID] = (new ItemTree(refinedPlanks.blockID - 256, refinedPlanks)).setItemName("refinedPlanks");
 	}
 	
 
 	
 	public void load(){};
-	public String getVersion(){return "1.3.2";}
+	public String getVersion(){return "1.4.7";}
 }
