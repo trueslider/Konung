@@ -31,11 +31,11 @@ public class mod_konungRefinedWood extends BaseMod
 		ModLoader.addRecipe(new ItemStack(refinedWood, 3, 2), new Object[]{ "X","X","X",Character.valueOf('X'), new ItemStack(Block.wood, 1, 2)});
 		ModLoader.addRecipe(new ItemStack(refinedWood, 3, 3), new Object[]{ "X","X","X",Character.valueOf('X'), new ItemStack(Block.wood, 1, 3)});
 		
-		Item.itemsList[refinedWood.blockID] = (new ItemTree(refinedWood.blockID - 256, refinedWood)).setItemName("refinedWood");
+		//Item.itemsList[refinedWood.blockID] = (new ItemTree(refinedWood.blockID - 256, refinedWood)).setItemName("refinedWood");
 						
 }
 	
 	public void load(){};
-	public String getVersion(){return "1.3.2";}
+	public String getVersion(){return "1.4.7";}
 	
 }
