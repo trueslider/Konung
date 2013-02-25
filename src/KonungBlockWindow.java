@@ -20,7 +20,7 @@ public class KonungBlockWindow extends BlockContainer
         
         public int idDropped(int i, Random random, int j)
         {
-                return mod_konungDecorations.itemWindow.shiftedIndex;
+                return mod_konungDecorations.itemWindow.iconIndex;
         }
 
         public int quantityDropped(Random random)
@@ -46,7 +46,7 @@ public class KonungBlockWindow extends BlockContainer
                 return false;
         }
         
-        protected int damageDropped(int par1)
+        public int damageDropped(int par1)
         {
         	return par1;
         }
