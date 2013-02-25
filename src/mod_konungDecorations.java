@@ -35,12 +35,12 @@ public class mod_konungDecorations extends BaseMod
 	/*
 	 * blockWindowID-256 связывает ID блока с предметом.
 	 */
-	public static final Item itemWindow = (new KonungItemWindow (blockWindowID-256, blockWindow).setItemName("Window")).setTabToDisplayOn(CreativeTabs.tabBlock);
-	public static final Item itemTable = (new KonungItemTable (blockTableID-256, blockTable).setItemName("Table")).setTabToDisplayOn(CreativeTabs.tabBlock);
-	public static final Item itemBench = (new KonungItemBench (blockBenchID-256, blockBench).setItemName("Bench")).setTabToDisplayOn(CreativeTabs.tabBlock);
-	public static final Item itemBarrel = (new KonungItemBarrel (blockBarrelID-256, blockBarrel).setItemName("Barrel")).setTabToDisplayOn(CreativeTabs.tabBlock);
-	public static final Item itemLeather = (new KonungItemLeather (blockLeatherID-256, blockLeather).setItemName("Leather")).setTabToDisplayOn(CreativeTabs.tabBlock);
-	public static final Item itemIdol = (new KonungItemIdol (blockIdolID-256, blockIdol).setItemName("Idol")).setTabToDisplayOn(CreativeTabs.tabBlock);
+	public static final Item itemWindow = (new KonungItemWindow (blockWindowID-256, blockWindow).setItemName("Window"));
+	public static final Item itemTable = (new KonungItemTable (blockTableID-256, blockTable).setItemName("Table"));
+	public static final Item itemBench = (new KonungItemBench (blockBenchID-256, blockBench).setItemName("Bench"));
+	public static final Item itemBarrel = (new KonungItemBarrel (blockBarrelID-256, blockBarrel).setItemName("Barrel"));
+	public static final Item itemLeather = (new KonungItemLeather (blockLeatherID-256, blockLeather).setItemName("Leather"));
+	public static final Item itemIdol = (new KonungItemIdol (blockIdolID-256, blockIdol).setItemName("Idol"));
 	
 
 	
@@ -132,6 +132,6 @@ public class mod_konungDecorations extends BaseMod
 	}	
 	
 	public void load(){};
-	public String getVersion(){return "1.3.2";}
+	public String getVersion(){return "1.4.7";}
 	
 }
