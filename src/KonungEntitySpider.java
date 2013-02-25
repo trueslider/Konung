@@ -24,7 +24,7 @@ public class KonungEntitySpider extends EntitySpider
     
     protected int getDropItemId()
     {
-        return mod_konungMobs.KonungPoisonSting.shiftedIndex;
+        return mod_konungMobs.KonungPoisonSting.itemID;
     }
 
     protected void dropFewItems(boolean par1, int par2)
@@ -33,7 +33,7 @@ public class KonungEntitySpider extends EntitySpider
 
         if (par1 && (rand.nextInt(3) == 0 || rand.nextInt(1 + par2) > 0))
         {
-            dropItem(mod_konungMobs.KonungPoisonSting.shiftedIndex, 1);
+            dropItem(mod_konungMobs.KonungPoisonSting.itemID, 1);
         }
     }
     
