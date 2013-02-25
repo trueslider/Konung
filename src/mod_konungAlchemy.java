@@ -5,8 +5,8 @@ import java.util.Random;
 public class mod_konungAlchemy extends BaseMod
 {
 
-	public static final Block KonungNut = new KonungBlockAlchemyNut(142, ModLoader.addOverride("/terrain.png", "/textures/konung/itemnut.png")).setStepSound(Block.soundGrassFootstep).setBlockName("Nut!");
-	public static final Block KonungWhiteRoot = new KonungBlockAlchemyWhiteRoot(143, ModLoader.addOverride("/terrain.png", "/textures/konung/itemroot.png")).setStepSound(Block.soundGrassFootstep).setBlockName("WhiteRoot!");
+	public static final Block KonungNut = new KonungBlockAlchemyNut(150, ModLoader.addOverride("/terrain.png", "/textures/konung/itemnut.png")).setStepSound(Block.soundGrassFootstep).setBlockName("Nut!");
+	public static final Block KonungWhiteRoot = new KonungBlockAlchemyWhiteRoot(151, ModLoader.addOverride("/terrain.png", "/textures/konung/itemroot.png")).setStepSound(Block.soundGrassFootstep).setBlockName("WhiteRoot!");
 	
 	public static final Item KonungHealingPotion02 = new ItemFood(4000, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.2F).setAlwaysEdible().setItemName("Heal1!");
 	public static final Item KonungHealingPotion04 = new ItemFood(4001, 0, 1F, false).setPotionEffect(Potion.heal.id, 10, 1, 0.4F).setAlwaysEdible().setItemName("Heal2!");
@@ -796,5 +796,5 @@ public class mod_konungAlchemy extends BaseMod
 	
 	
 	public void load(){};
-	public String getVersion(){return "1.3.2";}
+	public String getVersion(){return "1.4.7";}
 }
