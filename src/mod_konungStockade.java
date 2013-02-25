@@ -322,7 +322,7 @@ public class mod_konungStockade extends BaseMod
 		
 		if(props.getInt("BlockKaevWoodCorners") != 0){
 			BlockKaevWoodCorners = new KonungBlockStockade(props.getInt("BlockKaevWoodCorners"),4,Material.wood).setHardness(2.0F).setStepSound(Block.soundWoodFootstep).setResistance(5F).setBlockName("BlockKaevWoodCorners").setCreativeTab(CreativeTabs.tabBlock);
-			ItemKaevWoodCorners = new KonungItemStockade(BlockKaevWoodCorners.blockID - 256, "Wood").setItemName("ItemKaevWoodCorners").setTabToDisplayOn(CreativeTabs.tabBlock);
+			ItemKaevWoodCorners = new KonungItemStockade(BlockKaevWoodCorners.blockID - 256, "Wood").setItemName("ItemKaevWoodCorners");
 		}else{
 			BlockKaevWoodCorners = Block.stone;
 		}
@@ -645,17 +645,17 @@ public class mod_konungStockade extends BaseMod
         
 		/////////////////////////////////////////
 		
-		if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i, j - 1, k, 0))
+		if(block.shouldSideBeRendered(iblockaccess, i, j - 1, k, 0))
         {
 			renderCornersBottomFace(block, i, j, k, block.getBlockTexture(iblockaccess, i, j, k, 0),iDir, renderblocks, block.getMixedBrightnessForBlock(iblockaccess, i, j, k));		
             flag = true;
 		}
-		if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i, j + 1, k, 1))
+		if(block.shouldSideBeRendered(iblockaccess, i, j + 1, k, 1))
         {
 			renderCornersTopFace(block, i, j, k, block.getBlockTexture(iblockaccess, i, j, k, 0),iDir, renderblocks, block.getMixedBrightnessForBlock(iblockaccess, i, j, k));
             flag = true;
 		}
-		if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i, j, k - 1, 2))
+		if(block.shouldSideBeRendered(iblockaccess, i, j, k - 1, 2))
         {
 			renderCornersEastFace(block, i, j, k, l, iDir, renderblocks, block.getMixedBrightnessForBlock(iblockaccess, i, j, k));
 			if(field_27511_cfgGrassFix && l == 3)
@@ -676,7 +676,7 @@ public class mod_konungStockade extends BaseMod
             }    
 			flag = true;
 		}		
-		if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i, j, k + 1, 3))
+		if(block.shouldSideBeRendered(iblockaccess, i, j, k + 1, 3))
         {
 			renderCornersWestFace(block, i, j, k, i1, iDir, renderblocks, block.getMixedBrightnessForBlock(iblockaccess, i, j, k));
             if(field_27511_cfgGrassFix && i1 == 3)
@@ -697,7 +697,7 @@ public class mod_konungStockade extends BaseMod
             }
             flag = true;
         }
-		if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i - 1, j, k, 4))
+		if(block.shouldSideBeRendered(iblockaccess, i - 1, j, k, 4))
         {
 			renderCornersNorthFace(block, i, j, k, j1, iDir, renderblocks, block.getMixedBrightnessForBlock(iblockaccess, i, j, k));
 			if(field_27511_cfgGrassFix && j1 == 3)
@@ -718,7 +718,7 @@ public class mod_konungStockade extends BaseMod
             }
             flag = true;
         }
-		if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i + 1, j, k, 5))
+		if(block.shouldSideBeRendered(iblockaccess, i + 1, j, k, 5))
         {
 			renderCornersSouthFace(block, i, j, k, k1, iDir, renderblocks, block.getMixedBrightnessForBlock(iblockaccess, i, j, k));
             if(field_27511_cfgGrassFix && k1 == 3)
@@ -770,7 +770,7 @@ public class mod_konungStockade extends BaseMod
         float f18 = f6 * f2;
         float f19 = block.getAmbientOcclusionLightValue(iblockaccess, i, j, k);
 		
-		if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i, j - 1, k, 0))
+		if(block.shouldSideBeRendered(iblockaccess, i, j - 1, k, 0))
         {
 			if(iDir/4 != 1 && iDir/4 != 3){
 				float f20 = block.getAmbientOcclusionLightValue(iblockaccess, i, j - 1, k);
@@ -780,7 +780,7 @@ public class mod_konungStockade extends BaseMod
 			}
         }  
 
-		if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i, j + 1, k, 1))
+		if(block.shouldSideBeRendered(iblockaccess, i, j + 1, k, 1))
         {
 			if(iDir/4 != 0 && iDir/4 != 2){
 				float f21 = block.getAmbientOcclusionLightValue(iblockaccess, i, j + 1, k);
@@ -794,7 +794,7 @@ public class mod_konungStockade extends BaseMod
 			}
         }   
 		
-        if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i, j, k - 1, 2) || iDir%2 == 0)
+        if(block.shouldSideBeRendered(iblockaccess, i, j, k - 1, 2) || iDir%2 == 0)
         {
 			float f22 = block.getAmbientOcclusionLightValue(iblockaccess, i, j, k - 1);			
 			if(iDir%2 == 0){ 
@@ -805,7 +805,7 @@ public class mod_konungStockade extends BaseMod
             
             flag = true;
         }
-        if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i, j, k + 1, 3) || iDir%2 == 1)
+        if(block.shouldSideBeRendered(iblockaccess, i, j, k + 1, 3) || iDir%2 == 1)
         {			
             float f23 = block.getAmbientOcclusionLightValue(iblockaccess, i, j, k + 1);
             if(iDir%2 == 1)
@@ -816,7 +816,7 @@ public class mod_konungStockade extends BaseMod
             renderCornersWestFace(block, i, j, k, block.getBlockTexture(iblockaccess, i, j, k, 3), iDir, renderblocks, block.getMixedBrightnessForBlock(iblockaccess, i, j, k));
             flag = true;
         }
-        if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i - 1, j, k, 4) || iDir == 0 || iDir == 3 || iDir == 4 || iDir == 7 || iDir == 11 || iDir == 15)
+        if(block.shouldSideBeRendered(iblockaccess, i - 1, j, k, 4) || iDir == 0 || iDir == 3 || iDir == 4 || iDir == 7 || iDir == 11 || iDir == 15)
         {
             float f24 = block.getAmbientOcclusionLightValue(iblockaccess, i - 1, j, k);
             if(iDir == 0 || iDir == 3 || iDir == 4 || iDir == 7 || iDir == 11 || iDir == 15)
@@ -827,7 +827,7 @@ public class mod_konungStockade extends BaseMod
             renderCornersNorthFace(block, i, j, k, block.getBlockTexture(iblockaccess, i, j, k, 4), iDir, renderblocks, block.getMixedBrightnessForBlock(iblockaccess, i, j, k));
             flag = true;
         }
-        if(renderblocks.isRenderAllFaces() || block.shouldSideBeRendered(iblockaccess, i + 1, j, k, 5) || iDir == 1 || iDir == 2 || iDir == 5 || iDir == 6 || iDir == 10 || iDir == 14)
+        if(block.shouldSideBeRendered(iblockaccess, i + 1, j, k, 5) || iDir == 1 || iDir == 2 || iDir == 5 || iDir == 6 || iDir == 10 || iDir == 14)
         {
             float f25 = block.getAmbientOcclusionLightValue(iblockaccess, i + 1, j, k);
             if(iDir == 1 || iDir == 2 || iDir == 5 || iDir == 6 || iDir == 10 || iDir == 14)
@@ -845,10 +845,10 @@ public class mod_konungStockade extends BaseMod
     {
         Tessellator tessellator = Tessellator.instance;
         tessellator.setBrightness(lBrightness);
-        if(renderblocks.getOverrideBlockTexture() >= 0)
-        {
-            i = renderblocks.getOverrideBlockTexture();
-        }
+        //if(renderblocks.overrideBlockTexture() >= 0)
+        //{
+        //    i = renderblocks.getOverrideBlockTexture();
+        //}
         int j = (i & 0xf) << 4;
         int k = i & 0xf0;
         double d3 = ((double)j + block.minX * 16D) / 256D;
@@ -901,10 +901,10 @@ public class mod_konungStockade extends BaseMod
     {
         Tessellator tessellator = Tessellator.instance;
         tessellator.setBrightness(lBrightness);
-        if(renderblocks.getOverrideBlockTexture() >= 0)
-        {
-            i = renderblocks.getOverrideBlockTexture();
-        }
+        //if(renderblocks.getOverrideBlockTexture() >= 0)
+        //{
+        //    i = renderblocks.getOverrideBlockTexture();
+        //}
         int j = (i & 0xf) << 4;
         int k = i & 0xf0;
         double d3 = ((double)j + block.minX * 16D) / 256D;
@@ -957,22 +957,22 @@ public class mod_konungStockade extends BaseMod
     {
         Tessellator tessellator = Tessellator.instance;
         tessellator.setBrightness(lBrightness);
-        if(renderblocks.getOverrideBlockTexture() >= 0)
-        {
-            i = renderblocks.getOverrideBlockTexture();
-        }
+        //if(renderblocks.getOverrideBlockTexture() >= 0)
+        //{
+        //    i = renderblocks.getOverrideBlockTexture();
+        //}
         int j = (i & 0xf) << 4;
         int k = i & 0xf0;
         double d3 = ((double)j + block.minX * 16D) / 256D;
         double d4 = (((double)j + block.maxX * 16D) - 0.01D) / 256D;
         double d5 = ((double)k + block.minY * 16D) / 256D;
         double d6 = (((double)k + block.maxY * 16D) - 0.01D) / 256D;
-        if(renderblocks.isFlipTexture())
-        {
-            double d7 = d3;
-            d3 = d4;
-            d4 = d7;
-        }
+        //if(renderblocks.isFlipTexture())
+        //{
+        //    double d7 = d3;
+        //    d3 = d4;
+        //    d4 = d7;
+        //}
         if(block.minX < 0.0D || block.maxX > 1.0D)
         {
             d3 = ((float)j + 0.0F) / 256F;
@@ -1020,22 +1020,22 @@ public class mod_konungStockade extends BaseMod
     {
         Tessellator tessellator = Tessellator.instance;
         tessellator.setBrightness(lBrightness);
-        if(renderblocks.getOverrideBlockTexture() >= 0)
-        {
-            i = renderblocks.getOverrideBlockTexture();
-        }
+        //if(renderblocks.getOverrideBlockTexture() >= 0)
+        //{
+        //    i = renderblocks.getOverrideBlockTexture();
+        //}
         int j = (i & 0xf) << 4;
         int k = i & 0xf0;
         double d3 = ((double)j + block.minX * 16D) / 256D;
         double d4 = (((double)j + block.maxX * 16D) - 0.01D) / 256D;
         double d5 = ((double)k + block.minY * 16D) / 256D;
         double d6 = (((double)k + block.maxY * 16D) - 0.01D) / 256D;
-        if(renderblocks.isFlipTexture())
-        {
-            double d7 = d3;
-            d3 = d4;
-            d4 = d7;
-        }
+        //if(renderblocks.isFlipTexture())
+        //{
+        //    double d7 = d3;
+        //    d3 = d4;
+        //    d4 = d7;
+        //}
         if(block.minX < 0.0D || block.maxX > 1.0D)
         {
             d3 = ((float)j + 0.0F) / 256F;
@@ -1087,22 +1087,22 @@ public class mod_konungStockade extends BaseMod
     {
         Tessellator tessellator = Tessellator.instance;
         tessellator.setBrightness(lBrightness);
-        if(renderblocks.getOverrideBlockTexture() >= 0)
-        {
-            i = renderblocks.getOverrideBlockTexture();
-        }
+        //if(renderblocks.getOverrideBlockTexture() >= 0)
+        //{
+        //    i = renderblocks.getOverrideBlockTexture();
+        //}
         int j = (i & 0xf) << 4;
         int k = i & 0xf0;
         double d3 = ((double)j + block.minZ * 16D) / 256D;
         double d4 = (((double)j + block.maxZ * 16D) - 0.01D) / 256D;
         double d5 = ((double)k + block.minY * 16D) / 256D;
         double d6 = (((double)k + block.maxY * 16D) - 0.01D) / 256D;
-        if(renderblocks.isFlipTexture())
-        {
-            double d7 = d3;
-            d3 = d4;
-            d4 = d7;
-        }
+        //if(renderblocks.isFlipTexture())
+        //{
+        //    double d7 = d3;
+        //    d3 = d4;
+        //    d4 = d7;
+        //}
         if(block.minZ < 0.0D || block.maxZ > 1.0D)
         {
             d3 = ((float)j + 0.0F) / 256F;
@@ -1151,22 +1151,22 @@ public class mod_konungStockade extends BaseMod
     {
         Tessellator tessellator = Tessellator.instance;
         tessellator.setBrightness(lBrightness);
-        if(renderblocks.getOverrideBlockTexture() >= 0)
-        {
-            i = renderblocks.getOverrideBlockTexture();
-        }
+        //if(renderblocks.getOverrideBlockTexture() >= 0)
+        //{
+        //    i = renderblocks.getOverrideBlockTexture();
+        //}
         int j = (i & 0xf) << 4;
         int k = i & 0xf0;
         double d3 = ((double)j + block.minZ * 16D) / 256D;
         double d4 = (((double)j + block.maxZ * 16D) - 0.01D) / 256D;
         double d5 = ((double)k + block.minY * 16D) / 256D;
         double d6 = (((double)k + block.maxY * 16D) - 0.01D) / 256D;
-        if(renderblocks.isFlipTexture())
-        {
-            double d7 = d3;
-            d3 = d4;
-            d4 = d7;
-        }
+        //if(renderblocks.isFlipTexture())
+        //{
+        //    double d7 = d3;
+        //    d3 = d4;
+        //    d4 = d7;
+        //}
         if(block.minZ < 0.0D || block.maxZ > 1.0D)
         {
             d3 = ((float)j + 0.0F) / 256F;
@@ -1214,5 +1214,5 @@ public class mod_konungStockade extends BaseMod
 
 
 	public void load(){};
-	public String getVersion(){return "1.3.2";}
+	public String getVersion(){return "1.4.7";}
 }
