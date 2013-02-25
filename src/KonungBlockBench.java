@@ -39,7 +39,7 @@ public class KonungBlockBench extends BlockContainer
         
         public int idDropped(int i, Random random, int j)
         {
-                return mod_konungDecorations.itemBench.shiftedIndex;
+                return mod_konungDecorations.itemBench.iconIndex;
         }
 
         public int quantityDropped(Random random)
@@ -65,7 +65,7 @@ public class KonungBlockBench extends BlockContainer
                 return false;
         }
         
-        protected int damageDropped(int par1)
+        public int damageDropped(int par1)
         {
         	return par1;
         }
