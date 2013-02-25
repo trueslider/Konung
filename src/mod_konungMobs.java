@@ -6,13 +6,13 @@ import java.util.Random;
 public class mod_konungMobs extends BaseMod
 {
 	
-	public static final Item KonungPoisonSting = new KonungItemPoisonSting(4500).setItemName("Poison Sting!");
+	public static final Item KonungPoisonSting = new KonungItemPoisonSting(4500).setItemName("Poison Sting");
 	
 	public mod_konungMobs()
 	{
 		//Posion Sting
 		KonungPoisonSting.iconIndex = ModLoader.addOverride("/gui/items.png", "/textures/konung/poisonsting.png");
-		ModLoader.addName(KonungPoisonSting, "Poison Sting");
+		ModLoader.addName(KonungPoisonSting, "en_EN", "Poison Sting");
 		
 		
 		//Poison Spider
@@ -31,6 +31,6 @@ public class mod_konungMobs extends BaseMod
 	
 	
 	public void load(){};
-	public String getVersion(){return "1.3.2";}
+	public String getVersion(){return "1.4.7";}
 	
 }
