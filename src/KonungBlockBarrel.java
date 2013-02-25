@@ -45,7 +45,7 @@ public class KonungBlockBarrel extends BlockContainer
          */
         public int idDropped(int i, Random random, int j)
         {
-                return mod_konungDecorations.itemBarrel.shiftedIndex;
+                return mod_konungDecorations.itemBarrel.iconIndex;
         }
 
        
@@ -154,7 +154,7 @@ public class KonungBlockBarrel extends BlockContainer
 
                             if (var9.hasTagCompound())
                             {
-                                var14.item.setTagCompound((NBTTagCompound)var9.getTagCompound().copy());
+                            	var14.getEntityItem().setTagCompound((NBTTagCompound)var9.getTagCompound().copy());
                             }
                         }
                     }
